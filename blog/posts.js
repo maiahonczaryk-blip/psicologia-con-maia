@@ -131,6 +131,22 @@ window.POSTS = [
       <p>Cuando todo cambia y mil voces opinan, tu cerebro hace lo que sabe: intenta reducir el riesgo reuniendo más información. Un artículo más, un curso más, un consejo más. Y cuanta más información entra, más opciones, más contradicciones y más sensación de que cualquier decisión puede ser la equivocada.</p>
       <p>Es la <strong>parálisis por sobrecarga</strong>. La veo todo el tiempo: personas muy talentosas bloqueadas mirando la inmensidad del entorno (la inflación, la incertidumbre, la tecnología que cambia cada trimestre, la meta anual que parece lejana). Se abruman y, sin darse cuenta, se quedan quietas.</p>
       <p>Y no es pereza. Tu mente intenta protegerte. Cuando percibe demasiadas amenazas, entra en visión de túnel: se cierra sobre una sola cosa y empieza a imaginar escenarios catastróficos que, en su gran mayoría, jamás ocurren.</p>
+      <p>La buena noticia es que esta parálisis tiene salida, y empieza por cómo interpretas lo que te pasa. De eso hablo en la próxima nota.</p>
+      <div class="callout">
+        <h3>¿En serio quieres hacer esto solo?</h3>
+        <p>Dar vueltas a la misma duda en tu cabeza, semana tras semana, no te da claridad: te agota. En una sesión de coaching 1 a 1 me cuentas dónde estás, vemos qué te frena y sales con un siguiente paso concreto.</p>
+        <p><a class="btn solid" href="index.html#agenda">Reserva tu primera sesión</a></p>
+      </div>
+    `
+  },
+  {
+    slug: "los-hechos-son-neutros",
+    fecha: "2026-11-26",
+    categoria: "Modernidad líquida",
+    titulo: "El hecho es neutro; el escenario lo inventas tú",
+    resumen: "Se cae una operación y el hecho es el mismo para todos. Lo que cambia es la historia que te cuentas. Retransformación y círculo del Zorro para volver a moverte.",
+    contenido: `
+      <p>Si leíste la nota anterior, ya sabes que sentirte confundido no es fallar. Ahora toca lo importante: qué haces con eso.</p>
       <h2>El hecho es neutro; el escenario lo inventas tú</h2>
       <p>Epicteto lo dijo hace dos mil años: no nos perturban las cosas que pasan, sino los juicios que hacemos sobre ellas. La neurociencia lo explica con los <em>escenarios contrafactuales</em>: cuando algo ocurre, tu cerebro inventa una realidad alternativa para evaluarlo. Si imagina una mejor, te sientes víctima («¿por qué a mí?»). Si imagina una peor, sientes alivio y fuerza («podría haber sido mucho peor»).</p>
       <p>Se te cae una operación, se va un cliente clave, el mercado se frena. El hecho es el mismo para todos. Lo que separa a quien se paraliza cuatro días de quien a los quince minutos replantea el siguiente paso es la historia que se cuenta en los primeros segundos.</p>
@@ -148,7 +164,7 @@ window.POSTS = [
       <p>Cada semana te escribo una nota como esta, pensada para quien lidera: reclutamiento (y por qué reclutar emprendedores no se parece a reclutar empleados), procesos, propósito y motivación, zona de confort y crecimiento, el rol real del líder y cómo moverte en un empleo y unos negocios que no se quedan quietos.</p>
       <p>No te traigo otra lista de pautas; ya tienes demasiadas. Vengo a pensar contigo.</p>
       <div class="callout">
-        <h3>¿Quieres no hacerlo solo?</h3>
+        <h3>¿En serio quieres hacer esto solo?</h3>
         <p>Me dedico a acompañar a dueños y líderes como tú, uno a uno, a recuperar claridad, tomar las decisiones que llevan semanas pendientes y sostener a su equipo sin quemarse. Empezamos con una sesión de coaching: me cuentas dónde estás, vemos qué te frena y sales con un siguiente paso concreto. Si en el camino necesitas ordenar tu equipo, contratar mejor o rediseñar cómo funciona tu empresa, lo trabajamos juntos.</p>
         <p><a class="btn solid" href="index.html#agenda">Reserva tu primera sesión</a></p>
       </div>
