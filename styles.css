@@ -67,6 +67,13 @@ nav ul a:hover{color:var(--blue)}
 .about{background:var(--pink-soft)}
 .about-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:80px;align-items:start}
 .about p{margin-bottom:18px;color:var(--text)}
+.portrait{position:relative;width:100%;max-width:400px;margin:48px 0 0;isolation:isolate}
+.portrait img{display:block;width:100%;height:auto;position:relative;z-index:1;
+  filter:drop-shadow(3px 0 0 #fff) drop-shadow(-3px 0 0 #fff) drop-shadow(0 3px 0 #fff) drop-shadow(0 -3px 0 #fff) drop-shadow(0 14px 22px rgba(9,49,141,.18))}
+.pleaf{position:absolute;color:var(--blue);z-index:0;pointer-events:none}
+.pleaf.pl1{width:62%;top:2%;left:-22%;transform:rotate(-28deg);opacity:.4}
+.pleaf.pl2{width:48%;bottom:8%;right:-16%;transform:rotate(35deg);color:#d9a9c6;opacity:.75}
+@media(max-width:820px){.portrait{max-width:320px;margin:36px auto 0}.pleaf.pl1{left:-14%}.pleaf.pl2{right:-10%}}
 .tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
 .tags span{border:1px solid rgba(9,49,141,.4);color:var(--blue);padding:6px 16px;font-size:13px;border-radius:999px}
 
@@ -134,3 +141,61 @@ footer{background:var(--pink);padding:32px 0;text-align:center;font-size:13px;co
 .logo-big{display:block;width:min(560px,86%);height:auto;margin:0 auto 34px;color:var(--blue)}
 .quote-band .line{margin:0 auto 28px}
 .quote-band{padding:100px 0}
+
+/* retrato fijo mientras se lee la sección */
+.about{overflow:clip}
+@media(min-width:821px){
+  .about-grid>div:first-child{position:sticky;top:104px}
+  .portrait{max-width:none;width:auto;margin-top:32px;display:inline-block}
+  .portrait img{width:auto;max-width:100%;height:clamp(300px,calc(100vh - 470px),520px)}
+}
+
+/* perfil: foto grande a la izquierda, presentación a la derecha */
+.about-grid{grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:72px;align-items:start}
+.about-photo{position:sticky;top:100px}
+.about-photo .portrait{display:block;width:100%;max-width:520px;margin:0 auto}
+.about-photo .portrait img{width:100%;max-width:none;height:auto;max-height:calc(100vh - 130px);object-fit:contain;object-position:bottom}
+.about-text{position:static}
+.about-text .eyebrow.ind{margin:6px 0 14px;opacity:.75}
+.about-text .stats{grid-template-columns:1fr 1fr;gap:30px;margin:0 0 38px;padding-bottom:30px;border-bottom:1px solid rgba(9,49,141,.18)}
+.about-text p{text-align:justify;hyphens:auto}
+@media(max-width:820px){
+  .about-grid{grid-template-columns:1fr;gap:36px}
+  .about-photo{position:static}
+  .about-photo .portrait{max-width:340px}
+  .about-text .stats{grid-template-columns:1fr}
+}
+
+/* indicadores grandes bajo foto y presentación */
+.about-text .stats{all:unset}
+.about .stats.stats-big{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:72px;padding-top:44px;border-top:1px solid rgba(9,49,141,.2)}
+.stats-big b{font-size:clamp(64px,8vw,104px)}
+.stats-big span{display:block;font-size:17px;margin-top:10px;color:var(--text);max-width:420px}
+@media(max-width:820px){.about .stats.stats-big{grid-template-columns:1fr;gap:32px;margin-top:48px}}
+
+/* keywords en una sola línea bajo los indicadores */
+.tags.tags-row{flex-wrap:nowrap;justify-content:space-between;gap:8px;margin-top:40px}
+.tags.tags-row span{white-space:nowrap;padding:6px 13px;font-size:12.5px}
+@media(max-width:1000px){.tags.tags-row{flex-wrap:wrap;justify-content:flex-start;gap:10px}}
+
+.stats-big u{color:var(--blue);text-decoration-color:var(--blue)}
+
+/* ajustes: tags centradas, hoja fuera de las tags, foto algo mayor */
+.tags.tags-row{justify-content:center;gap:10px}
+.leaf.l-about{bottom:auto;top:-50px;right:-60px;transform:rotate(25deg)}
+.about-grid{grid-template-columns:minmax(0,1.1fr) minmax(0,1.1fr);gap:60px}
+.about-photo .portrait{max-width:600px}
+.about-photo .portrait img{max-height:calc(100vh - 100px)}
+@media(max-width:820px){.about-grid{grid-template-columns:1fr}.about-photo .portrait{max-width:380px}}
+
+/* apartado indicadores (entre Conóceme y Enfoque) */
+.indicators{padding:30px 0 90px}
+.ind-box{background:var(--pink-soft);border-radius:4px;padding:64px 56px 52px;position:relative}
+.ind-box .stats.stats-big{margin-top:0;padding-top:0;border-top:0}
+.ind-box .tags.tags-row{margin-top:48px;padding-top:34px;border-top:1px solid rgba(9,49,141,.2)}
+@media(max-width:820px){.ind-box{padding:40px 24px 34px}}
+
+/* fondo rosa de lado a lado */
+.indicators{background:var(--pink-soft);padding:80px 0 72px}
+.ind-box{background:none;border-radius:0;padding:0}
+@media(max-width:820px){.indicators{padding:56px 0 48px}.ind-box{padding:0}}
