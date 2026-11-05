@@ -199,3 +199,38 @@ footer{background:var(--pink);padding:32px 0;text-align:center;font-size:13px;co
 .indicators{background:var(--pink-soft);padding:80px 0 72px}
 .ind-box{background:none;border-radius:0;padding:0}
 @media(max-width:820px){.indicators{padding:56px 0 48px}.ind-box{padding:0}}
+
+/* presentación más compacta para cuadrar con la foto */
+.about-text p{font-size:15.5px;line-height:1.62;margin-bottom:14px}
+.about-text h2{margin-bottom:18px}
+.about-text .line{margin-bottom:22px}
+
+/* indicadores lado a lado + menos margen rosa en Perfil */
+.indicators .stats.stats-big{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+@media(max-width:820px){.indicators .stats.stats-big{grid-template-columns:1fr;gap:32px}}
+.about{padding:56px 0}
+@media(max-width:820px){.about{padding:44px 0}}
+
+.ind-box .tags.tags-row{border-top:0;padding-top:0}
+
+.about{padding:32px 0}
+@media(max-width:820px){.about{padding:28px 0}}
+
+/* foto a la derecha, texto a la izquierda */
+@media(min-width:821px){
+  .about-photo{order:2}
+  .about-text{order:1}
+  .leaf.l-about{right:auto;left:-60px;transform:rotate(-25deg)}
+}
+
+/* foto más a la derecha; la hoja no invade el texto */
+@media(min-width:821px){
+  .about-grid{gap:90px}
+  .about-photo .portrait{margin:0 -20px 0 auto;max-width:560px}
+  .pleaf.pl1{left:-4%;top:6%;width:50%}
+}
+
+/* hoja de la portada a la derecha, lejos de la sección rosa */
+.leaf.l-hero2{left:auto;right:-40px;bottom:-30px;transform:rotate(30deg) scaleX(-1)}
+
+.leaf.l-hero2{display:none}
