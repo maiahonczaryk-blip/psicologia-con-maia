@@ -141,7 +141,7 @@ window.POSTS = [
   },
   {
     slug: "los-hechos-son-neutros",
-    fecha: "2026-11-26",
+    fecha: "2026-11-05",
     categoria: "Modernidad líquida",
     titulo: "El hecho es neutro; el escenario lo inventas tú",
     resumen: "Se cae una operación y el hecho es el mismo para todos. Lo que cambia es la historia que te cuentas. Retransformación y círculo del Zorro para volver a moverte.",
