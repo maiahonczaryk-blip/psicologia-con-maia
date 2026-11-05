@@ -115,7 +115,7 @@ window.POSTS = [
   },
   {
     slug: "bienvenida-al-blog",
-    fecha: "2026-11-05",
+    fecha: "2026-11-02",
     categoria: "Modernidad líquida",
     titulo: "Nunca hubo tanta información y nunca estuviste tan perdido",
     resumen: "Si diriges un negocio y te sientes confundido, no estás fallando. Estás en plena modernidad líquida. Y hay salida.",
