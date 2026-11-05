@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Xilema by Maia · Psicología para el liderazgo y la empresa</title>
+<meta name="description" content="Xilema by Maia: consultoría de personas y organización para empresarios y empresas que quieren crecer con raíz, estructura y dirección.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --verde:#1f3d34; --verde-claro:#4f7566; --crema:#f6f1e7; --madera:#a9794f; --tinta:#25302c;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',sans-serif;font-weight:300;color:var(--tinta);background:var(--crema);line-height:1.75;overflow-x:hidden}
+  h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:500;color:var(--verde);line-height:1.15}
+  h1{font-size:clamp(3rem,8vw,6rem);letter-spacing:.01em}
+  h1 span{font-style:italic;font-weight:400;color:var(--madera)}
+  h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:1.2rem}
+  h3{font-size:1.5rem;margin-bottom:.5rem}
+  p{max-width:62ch}
+  section{position:relative;padding:7rem 1.5rem;overflow:hidden}
+  .wrap{max-width:1000px;margin:0 auto;position:relative;z-index:1}
+  .eyebrow{font-size:.75rem;letter-spacing:.3em;text-transform:uppercase;color:var(--madera);margin-bottom:1.2rem;font-weight:500}
+
+  /* hojas decorativas (línea fina) */
+  .leaf{position:absolute;fill:none;stroke:var(--verde-claro);stroke-width:1;stroke-linecap:round;stroke-linejoin:round;opacity:.35;pointer-events:none;z-index:0;height:auto}
+
+  nav{position:fixed;top:0;left:0;right:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:1.1rem 2rem;background:rgba(246,241,231,.88);backdrop-filter:blur(8px);border-bottom:1px solid rgba(31,61,52,.08)}
+  nav .logo{font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:var(--verde);text-decoration:none}
+  nav .logo em{color:var(--madera)}
+  nav ul{display:flex;gap:2rem;list-style:none}
+  nav a{color:var(--tinta);text-decoration:none;font-size:.85rem;letter-spacing:.08em}
+  nav ul a:hover{color:var(--madera)}
+  @media(max-width:700px){nav ul{display:none}}
+
+  .hero{min-height:100vh;display:flex;align-items:center;padding-top:6rem}
+  .hero p.lead{font-size:1.2rem;margin:1.8rem 0 2.4rem}
+  .btn{display:inline-block;padding:.9rem 2.2rem;border:1px solid var(--verde);color:var(--verde);text-decoration:none;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;transition:.3s}
+  .btn.fill{background:var(--verde);color:var(--crema)}
+  .btn.fill:hover{background:var(--madera);border-color:var(--madera)}
+
+  .oscuro{background:var(--verde);color:#e9e4d6}
+  .oscuro h2,.oscuro h3{color:var(--crema)}
+  .oscuro .eyebrow{color:#d3a77c}
+  .oscuro .leaf{stroke:#cfe0d6;opacity:.18}
+  .cita{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.6rem,3vw,2.3rem);color:var(--verde);max-width:30ch;margin-top:2rem;line-height:1.3}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:3rem 2.5rem;margin-top:3rem}
+  .item{border-top:1px solid rgba(31,61,52,.25);padding-top:1.2rem}
+  .oscuro .item{border-color:rgba(233,228,214,.3)}
+  .item .n{font-family:'Cormorant Garamond',serif;color:var(--madera);font-size:1rem;letter-spacing:.2em}
+  .oscuro .item .n{color:#d3a77c}
+
+  .dos{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+  @media(max-width:800px){.dos{grid-template-columns:1fr}}
+  .anillos{width:100%;max-width:340px;margin:auto}
+  .anillos circle{fill:none;stroke:var(--madera);stroke-width:1;opacity:.7}
+
+  footer{padding:3rem 1.5rem;text-align:center;font-size:.8rem;color:var(--verde-claro)}
+  footer .logo{font-family:'Cormorant Garamond',serif;font-size:1.6rem;color:var(--verde);display:block;margin-bottom:.5rem}
+  footer .logo em{color:var(--madera)}
+</style>
+</head>
+<body>
+
+<!-- Dibujos de línea fina reutilizables -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="monstera" viewBox="0 0 200 200">
+      <path d="M100 152 C84 176 32 176 14 124 C3 90 22 52 52 34 L66 46 L56 62 L74 70 L68 88 L86 94 L84 112 L100 118
+               L116 112 L114 94 L132 88 L126 70 L144 62 L134 46 L148 34 C178 52 197 90 186 124 C168 176 116 176 100 152 Z"/>
+      <path d="M100 152 L100 118"/>
+      <path d="M100 152 C100 172 102 188 106 198"/>
+      <path d="M100 118 L100 40"/>
+      <path d="M100 112 C86 112 70 118 52 128"/><path d="M100 112 C114 112 130 118 148 128"/>
+      <path d="M100 92 C84 92 66 98 42 104"/><path d="M100 92 C116 92 134 98 158 104"/>
+      <path d="M100 72 C86 70 74 70 62 76"/><path d="M100 72 C114 70 126 70 138 76"/>
+      <ellipse cx="62" cy="140" rx="5" ry="3" transform="rotate(-25 62 140)"/>
+      <ellipse cx="138" cy="140" rx="5" ry="3" transform="rotate(25 138 140)"/>
+      <ellipse cx="40" cy="112" rx="4" ry="2.5" transform="rotate(-15 40 112)"/>
+      <ellipse cx="160" cy="112" rx="4" ry="2.5" transform="rotate(15 160 112)"/>
+    </symbol>
+    <symbol id="hojita" viewBox="0 0 100 200">
+      <path d="M50 195 C48 150 50 100 50 20"/>
+      <path d="M50 20 C20 50 18 120 50 160 C82 120 80 50 50 20 Z"/>
+      <path d="M50 150 C38 130 34 110 32 90"/><path d="M50 150 C62 130 66 110 68 90"/>
+      <path d="M50 110 C40 94 38 80 38 66"/><path d="M50 110 C60 94 62 80 62 66"/>
+    </symbol>
+  </defs>
+</svg>
+
+<nav>
+  <a class="logo" href="#inicio">Xilema <em>by Maia</em></a>
+  <ul>
+    <li><a href="#que-es">El nombre</a></li>
+    <li><a href="#enfoque">Enfoque</a></li>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</nav>
+
+<section class="hero" id="inicio">
+  <svg class="leaf" style="width:420px;right:-60px;top:70px;transform:rotate(18deg)"><use href="#monstera"/></svg>
+  <svg class="leaf" style="width:200px;left:-40px;bottom:30px;transform:rotate(-30deg)"><use href="#monstera"/></svg>
+  <div class="wrap">
+    <p class="eyebrow">Psicología para el liderazgo y la empresa</p>
+    <h1>Xilema<br><span>by Maia</span></h1>
+    <p class="lead">Asesoría para empresarios y empresas que quieren crecer con raíz, estructura y dirección.</p>
+    <a class="btn fill" href="#contacto">Hablemos</a>
+  </div>
+</section>
+
+<section id="que-es">
+  <svg class="leaf" style="width:260px;left:-70px;top:40px;transform:rotate(25deg)"><use href="#monstera"/></svg>
+  <div class="wrap">
+    <p class="eyebrow">El nombre</p>
+    <div class="dos">
+      <div>
+        <h2>¿Por qué Xilema?</h2>
+        <p>El xilema es el tejido de las plantas que conduce el agua y los nutrientes desde la raíz hasta las hojas más altas. Con los años se convierte en madera: da estructura y sostiene al árbol mientras crece.</p>
+        <p style="margin-top:1rem">Una empresa funciona igual. Puede tener raíces fuertes, es decir, valores, historia y visión, y una copa llena de proyectos. Pero si lo esencial no llega de una a otra, el crecimiento se detiene.</p>
+        <p class="cita">Lo esencial llega a lo más alto.</p>
+      </div>
+      <svg class="anillos" viewBox="0 0 200 200" role="img" aria-label="Anillos de crecimiento">
+        <circle cx="100" cy="100" r="6"/><circle cx="100" cy="100" r="16"/><circle cx="101" cy="100" r="27"/>
+        <circle cx="100" cy="101" r="39"/><circle cx="99" cy="100" r="52"/><circle cx="100" cy="100" r="66"/>
+        <circle cx="101" cy="99" r="81"/><circle cx="100" cy="100" r="95"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="oscuro" id="enfoque">
+  <svg class="leaf" style="width:340px;right:-80px;bottom:-40px;transform:rotate(-20deg)"><use href="#monstera"/></svg>
+  <svg class="leaf" style="width:90px;left:4%;top:60px;transform:rotate(15deg)"><use href="#hojita"/></svg>
+  <div class="wrap">
+    <p class="eyebrow">Lo que representa</p>
+    <h2>Cinco ideas que guían el trabajo</h2>
+    <div class="grid">
+      <div class="item"><span class="n">01</span><h3>Conduce lo esencial</h3><p>Abrir el canal entre lo profundo (la persona, sus valores, su mente) y lo visible: las decisiones y los resultados.</p></div>
+      <div class="item"><span class="n">02</span><h3>Une raíz y copa</h3><p>La psicología trabaja la raíz: motivaciones, creencias, patrones. La empresa es la copa. Xilema las conecta.</p></div>
+      <div class="item"><span class="n">03</span><h3>Crecer con estructura</h3><p>Crecer rápido sin estructura es frágil. Crecer con estructura es lo que perdura.</p></div>
+      <div class="item"><span class="n">04</span><h3>Desde dentro</h3><p>Nadie ve el xilema, pero todo depende de él. El trabajo bien hecho sostiene los resultados en silencio.</p></div>
+      <div class="item"><span class="n">05</span><h3>Anillos de crecimiento</h3><p>Cada año se suma un anillo. El crecimiento es por etapas, acumulativo y medible.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="servicios">
+  <svg class="leaf" style="width:300px;right:-90px;top:20px;transform:rotate(-15deg)"><use href="#monstera"/></svg>
+  <div class="wrap">
+    <p class="eyebrow">Servicios</p>
+    <h2>Para quien lidera y quiere crecer con sentido</h2>
+    <p>Para empresarios, emprendedores y equipos directivos que ya han construido algo y quieren que su crecimiento tenga raíz, propósito y solidez.</p>
+    <div class="grid">
+      <div class="item"><h3>Reclutamiento ejecutivo</h3><p>Incorporar a las personas adecuadas en los puestos clave.</p></div>
+      <div class="item"><h3>Organigramas y estructura</h3><p>Diseñar la estructura que sostiene el crecimiento.</p></div>
+      <div class="item"><h3>Reestructuración</h3><p>Reordenar la organización en momentos de cambio.</p></div>
+      <div class="item"><h3>Gestión del talento</h3><p>Desarrollar y retener a las personas que hacen la empresa.</p></div>
+      <div class="item"><h3>Dirección de nuevos proyectos</h3><p>Acompañar la puesta en marcha de nuevas iniciativas.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="oscuro" id="contacto" style="text-align:center">
+  <svg class="leaf" style="width:260px;left:-60px;top:-20px;transform:rotate(30deg)"><use href="#monstera"/></svg>
+  <svg class="leaf" style="width:260px;right:-60px;bottom:-30px;transform:rotate(-150deg)"><use href="#monstera"/></svg>
+  <div class="wrap">
+    <p class="eyebrow">Contacto</p>
+    <h2>Empecemos por la raíz</h2>
+    <p style="margin:0 auto 2.2rem">Cuéntame en qué momento está tu proyecto y vemos cómo acompañarte.</p>
+    <a class="btn fill" href="mailto:hola@ejemplo.com" style="background:var(--crema);color:var(--verde)">Escríbeme</a>
+  </div>
+</section>
+
+<footer>
+  <span class="logo">Xilema <em>by Maia</em></span>
+  Psicología para el liderazgo y la empresa
+</footer>
+
+</body>
+</html>

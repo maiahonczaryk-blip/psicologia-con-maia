@@ -1,0 +1,73 @@
+/* Optimización móvil – se carga al final y solo actúa en pantallas pequeñas */
+.menu-toggle{display:none;background:none;border:1px solid rgba(9,49,141,.35);border-radius:2px;width:46px;height:46px;cursor:pointer;color:var(--blue);padding:0;align-items:center;justify-content:center;flex:none}
+.menu-toggle span,.menu-toggle span::before,.menu-toggle span::after{display:block;width:20px;height:1.5px;background:currentColor;position:relative;transition:.3s}
+.menu-toggle span::before,.menu-toggle span::after{content:"";position:absolute;left:0}
+.menu-toggle span::before{top:-6px}
+.menu-toggle span::after{top:6px}
+header.open .menu-toggle span{background:transparent}
+header.open .menu-toggle span::before{top:0;transform:rotate(45deg)}
+header.open .menu-toggle span::after{top:0;transform:rotate(-45deg)}
+
+@media(max-width:820px){
+  body{font-size:16px}
+  .wrap{padding:0 20px}
+  section{padding:64px 0}
+  h3{font-size:24px}
+  .eyebrow{font-size:11px;letter-spacing:.18em}
+
+  /* menú hamburguesa */
+  nav{height:68px;gap:12px}
+  .logo-full,.logo-img{height:54px}
+  .menu-toggle{display:inline-flex;margin-left:auto}
+  nav ul{display:none}
+  header.open nav ul{display:flex;flex-direction:column;gap:0;position:absolute;top:100%;left:0;right:0;background:var(--white);padding:8px 20px 20px;border-bottom:1px solid rgba(9,49,141,.15);box-shadow:0 14px 24px rgba(9,49,141,.08);font-size:17px}
+  header.open nav ul a{display:block;padding:15px 0;border-bottom:1px solid rgba(9,49,141,.08)}
+  header.open nav ul li:last-child a{border-bottom:0}
+  nav .btn.ghost{padding:11px 14px;font-size:11px;letter-spacing:.1em;white-space:nowrap}
+
+  /* portada */
+  .hero{padding:48px 0 70px}
+  .hero-grid{gap:40px}
+  .hero p.lead{font-size:18px;margin:22px 0 30px}
+  .hero .btns{flex-direction:column}
+  .hero .btns .btn{text-align:center}
+  .arch{max-width:280px}
+  .leaf.l-hero1{width:170px;right:-70px}
+  .leaf.l-hero2,.leaf.l-book1,.leaf.l-band2{display:none}
+
+  /* perfil y secciones */
+  .about-grid{gap:36px}
+  .stats b{font-size:44px}
+  .art-duo{max-width:220px}
+  .help-head,.know-head{margin-bottom:36px}
+  .know-head p{font-size:17px}
+  .pillar{padding:28px 0 8px}
+  .quote-band{padding:60px 0}
+  .svc{padding:28px 22px}
+
+  /* contacto */
+  .book .inner .btn{display:block;text-align:center}
+  .contact{flex-direction:column;align-items:center;gap:26px;text-align:center;margin-top:44px}
+  .contact a{font-size:20px;word-break:break-word}
+
+  footer{padding:26px 20px;line-height:1.5}
+
+  /* blog */
+  .blog-hero{padding:48px 0 24px}
+  .blog-hero p.lead{font-size:17px}
+  .filters{gap:8px;margin-bottom:34px}
+  .post-grid{grid-template-columns:1fr}
+  .card{padding:28px 24px}
+  .post-sec{padding:44px 0 70px}
+  .post .back{margin-bottom:28px}
+  .post h1{font-size:clamp(32px,9vw,44px);margin-bottom:26px}
+  .post-body p,.post-body ul{font-size:17px}
+  .post-body h2{font-size:28px;margin-top:36px}
+  .post-body blockquote{font-size:23px;padding-left:18px;margin:28px 0}
+  .callout{padding:26px 22px}
+  .callout .btn,.post-cta .btn{display:block;text-align:center}
+}
+
+@media(max-width:380px){
+  nav .btn.ghost{display:none}
+}

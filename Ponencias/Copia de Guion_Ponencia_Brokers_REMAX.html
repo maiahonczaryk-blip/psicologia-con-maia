@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maia | Ponencia Brokers RE/MAX Costa Rica 2026 - Guion Maestro Hablado</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+    
+    :root {
+      --bg-main: #060913;
+      --text-main: #e2e8f0;
+    }
+    
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      transition: background-color 0.25s ease, color 0.25s ease;
+    }
+    
+    .serif-quote {
+      font-family: 'Lora', Georgia, serif;
+    }
+    
+    .speech-bubble {
+      background: linear-gradient(135deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.8) 100%);
+      border-left: 4px solid #38bdf8;
+    }
+    
+    .stage-note {
+      background: rgba(245, 158, 11, 0.08);
+      border-left: 4px solid #f59e0b;
+    }
+
+    .slide-badge {
+      background: rgba(220, 38, 38, 0.12);
+      border: 1px solid rgba(220, 38, 38, 0.3);
+      border-left: 4px solid #dc2626;
+    }
+
+    .dynamic-badge {
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-left: 4px solid #10b981;
+    }
+
+    .psych-badge {
+      background: rgba(168, 85, 247, 0.12);
+      border: 1px solid rgba(168, 85, 247, 0.3);
+      border-left: 4px solid #a855f7;
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0f172a;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #334155;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #475569;
+    }
+
+    /* MODO PAPEL / VISTA CLARA */
+    body.paper-mode {
+      background-color: #f8fafc !important;
+      color: #0f172a !important;
+    }
+    body.paper-mode header {
+      background-color: #ffffff !important;
+      border-bottom: 1px solid #e2e8f0 !important;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05) !important;
+    }
+    body.paper-mode header h1, 
+    body.paper-mode header span {
+      color: #0f172a !important;
+    }
+    body.paper-mode .hero-card {
+      background: #ffffff !important;
+      border: 2px solid #dc2626 !important;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05) !important;
+    }
+    body.paper-mode .hero-card h1 {
+      color: #0f172a !important;
+    }
+    body.paper-mode .hero-card h1 span {
+      background: none !important;
+      -webkit-text-fill-color: initial !important;
+      color: #dc2626 !important;
+    }
+    body.paper-mode .block-section {
+      background: #ffffff !important;
+      border: 1px solid #e2e8f0 !important;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
+    }
+    body.paper-mode .speech-bubble {
+      background: #f8fafc !important;
+      color: #0f172a !important;
+      border: 1px solid #cbd5e1 !important;
+      border-left: 4px solid #0284c7 !important;
+    }
+    body.paper-mode .speech-bubble p,
+    body.paper-mode .speech-bubble li,
+    body.paper-mode .speech-bubble div {
+      color: #1e293b !important;
+    }
+    body.paper-mode .speech-bubble strong {
+      color: #0f172a !important;
+    }
+    body.paper-mode .speech-bubble [class*="text-sky-300"],
+    body.paper-mode .speech-bubble [class*="text-sky-400"] {
+      color: #0284c7 !important;
+    }
+    body.paper-mode .speech-bubble [class*="text-rose-300"],
+    body.paper-mode .speech-bubble [class*="text-rose-400"],
+    body.paper-mode .speech-bubble [class*="text-red-400"] {
+      color: #dc2626 !important;
+    }
+    body.paper-mode .speech-bubble [class*="text-amber-300"] {
+      color: #b45309 !important;
+    }
+    body.paper-mode .speech-bubble [class*="text-white"],
+    body.paper-mode .block-section [class*="text-white"] {
+      color: #0f172a !important;
+    }
+    body.paper-mode .speech-bubble [class*="bg-slate-950"],
+    body.paper-mode .speech-bubble [class*="bg-slate-900"],
+    body.paper-mode .block-section [class*="bg-slate-950"] {
+      background: #f1f5f9 !important;
+      border: 1px solid #cbd5e1 !important;
+      color: #0f172a !important;
+    }
+    body.paper-mode .speech-bubble [class*="bg-red-950"] {
+      background: #fef2f2 !important;
+      border: 1px solid #fca5a5 !important;
+    }
+    body.paper-mode .speech-bubble [class*="bg-sky-950"] {
+      background: #f0f9ff !important;
+      border: 1px solid #bae6fd !important;
+    }
+    body.paper-mode blockquote {
+      background: #f8fafc !important;
+      border: 1px solid #e2e8f0 !important;
+      border-left: 4px solid #dc2626 !important;
+      color: #0f172a !important;
+    }
+    body.paper-mode blockquote * {
+      color: #0f172a !important;
+    }
+    body.paper-mode .stage-note {
+      background: #fffbeb !important;
+      color: #92400e !important;
+      border-left-color: #d97706 !important;
+      border: 1px solid #fde68a !important;
+      border-left: 4px solid #d97706 !important;
+    }
+    body.paper-mode .stage-note p {
+      color: #78350f !important;
+    }
+    body.paper-mode .slide-badge {
+      background: #fef2f2 !important;
+      color: #991b1b !important;
+      border-left-color: #dc2626 !important;
+    }
+    body.paper-mode .psych-badge {
+      background: #faf5ff !important;
+      color: #6b21a8 !important;
+      border-left-color: #9333ea !important;
+    }
+    body.paper-mode .dynamic-badge {
+      background: #f0fdf4 !important;
+      color: #166534 !important;
+      border-left-color: #16a34a !important;
+    }
+
+    /* ========================================================================= */
+    /* REGLAS MAESTRAS DE IMPRESIÓN (@MEDIA PRINT)                               */
+    /* Formato A4 / Letter nítido, sin fondos negros y contraste máximo          */
+    /* ========================================================================= */
+    @page {
+      size: A4 portrait;
+      margin: 12mm 15mm 14mm 15mm;
+    }
+
+    @media print {
+      *, *::before, *::after {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+      }
+
+      html, body {
+        background: #ffffff !important;
+        background-color: #ffffff !important;
+        color: #0f172a !important;
+        font-size: 9.5pt !important;
+        line-height: 1.5 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+
+      .no-print, header, nav, footer, button, #timerDisplay, [onclick*="changeFontSize"] {
+        display: none !important;
+      }
+
+      main, #contentContainer {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+      }
+
+      /* Hero Header optimizado para papel */
+      .hero-card {
+        background: #ffffff !important;
+        border: 2px solid #dc2626 !important;
+        border-radius: 6pt !important;
+        padding: 10pt 14pt !important;
+        margin-bottom: 14pt !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+      }
+
+      .hero-card h1 {
+        font-size: 15pt !important;
+        color: #0f172a !important;
+        line-height: 1.25 !important;
+        margin-bottom: 4pt !important;
+      }
+
+      .hero-card h1 span {
+        background: none !important;
+        -webkit-text-fill-color: initial !important;
+        color: #dc2626 !important;
+        display: block !important;
+        font-size: 12pt !important;
+      }
+
+      .hero-card [class*="bg-red-600"] {
+        background: #fef2f2 !important;
+        color: #b91c1c !important;
+        border: 1px solid #f87171 !important;
+        font-weight: 700 !important;
+      }
+
+      .hero-card [class*="bg-blue-950"],
+      .hero-card [class*="bg-blue-600"] {
+        background: #eff6ff !important;
+        color: #1d4ed8 !important;
+        border: 1px solid #60a5fa !important;
+        font-weight: 700 !important;
+      }
+
+      .hero-card .border-t {
+        border-top: 1px solid #cbd5e1 !important;
+        margin-top: 6pt !important;
+        padding-top: 6pt !important;
+        font-size: 8.5pt !important;
+        color: #334155 !important;
+      }
+
+      /* Estructura de Secciones / Bloques (Cada bloque inicia en página nueva para que nunca se desajuste) */
+      .block-section {
+        background: transparent !important;
+        border: none !important;
+        border-radius: 0 !important;
+        padding: 0 !important;
+        margin: 0 0 20pt 0 !important;
+        page-break-before: always !important;
+        break-before: page !important;
+        page-break-inside: auto !important;
+        break-inside: auto !important;
+      }
+
+      #bloque1 {
+        page-break-before: auto !important;
+        break-before: auto !important;
+      }
+
+      /* Cabecera del bloque */
+      .block-section > div:first-child {
+        border-bottom: 2px solid #0f172a !important;
+        padding-bottom: 5pt !important;
+        margin-bottom: 10pt !important;
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+      }
+
+      h1, h2, h3, h4, h5 {
+        color: #0f172a !important;
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+      }
+
+      h2 {
+        font-size: 11pt !important;
+        font-weight: 800 !important;
+        margin: 0 !important;
+        color: #0f172a !important;
+      }
+
+      .block-section [class*="bg-red-600"] {
+        background-color: #dc2626 !important;
+        color: #ffffff !important;
+      }
+
+      .block-section [class*="bg-slate-800"] {
+        background-color: #f1f5f9 !important;
+        border: 1px solid #cbd5e1 !important;
+        color: #0369a1 !important;
+        font-weight: 700 !important;
+      }
+
+      /* Acotaciones Escénicas: unidas al contenido y nunca huérfanas */
+      .stage-note {
+        background: #fffbeb !important;
+        border: 1px solid #fde68a !important;
+        border-left: 4px solid #d97706 !important;
+        border-radius: 4pt !important;
+        padding: 6pt 10pt !important;
+        margin-bottom: 10pt !important;
+        color: #78350f !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+        font-size: 8.5pt !important;
+        line-height: 1.4 !important;
+      }
+
+      .stage-note p,
+      .stage-note div,
+      .stage-note span {
+        color: #78350f !important;
+      }
+
+      .stage-note strong,
+      .stage-note [class*="text-amber-200"],
+      .stage-note [class*="text-amber-300"] {
+        color: #92400e !important;
+        font-weight: bold !important;
+      }
+
+      /* Bloques de Voz / Parlamentos: fluido entre páginas con guía azul lateral */
+      .speech-bubble {
+        background: transparent !important;
+        border: none !important;
+        border-left: 3.5pt solid #0284c7 !important;
+        border-radius: 0 !important;
+        padding: 0 0 0 12pt !important;
+        margin: 0 0 12pt 0 !important;
+        color: #0f172a !important;
+        page-break-inside: auto !important;
+        break-inside: auto !important;
+      }
+
+      .speech-bubble p, 
+      .speech-bubble div, 
+      .speech-bubble li, 
+      .speech-bubble span {
+        color: #1e293b !important;
+        font-size: 9.5pt !important;
+      }
+
+      .speech-bubble p {
+        margin-bottom: 7pt !important;
+        line-height: 1.5 !important;
+        orphans: 3 !important;
+        widows: 3 !important;
+      }
+
+      .speech-bubble strong,
+      .speech-bubble b {
+        color: #0f172a !important;
+        font-weight: 700 !important;
+      }
+
+      /* Textos claros convertidos a tonos oscuros de alto contraste */
+      .speech-bubble [class*="text-white"],
+      .block-section [class*="text-white"] {
+        color: #0f172a !important;
+        font-weight: 700 !important;
+      }
+
+      .speech-bubble [class*="text-sky-300"],
+      .speech-bubble [class*="text-sky-400"],
+      .block-section [class*="text-sky-400"] {
+        color: #0369a1 !important;
+        font-weight: 700 !important;
+      }
+
+      .speech-bubble [class*="text-rose-300"],
+      .speech-bubble [class*="text-rose-400"],
+      .speech-bubble [class*="text-red-400"],
+      .block-section [class*="text-rose-400"],
+      .block-section [class*="text-red-400"] {
+        color: #b91c1c !important;
+        font-weight: 700 !important;
+      }
+
+      .speech-bubble [class*="text-emerald-300"],
+      .speech-bubble [class*="text-emerald-400"] {
+        color: #047857 !important;
+        font-weight: 700 !important;
+      }
+
+      .speech-bubble [class*="text-amber-300"],
+      .speech-bubble [class*="text-amber-400"] {
+        color: #92400e !important;
+        font-weight: 700 !important;
+      }
+
+      .speech-bubble [class*="text-purple-300"],
+      .speech-bubble [class*="text-purple-400"] {
+        color: #6b21a8 !important;
+        font-weight: 700 !important;
+      }
+
+      .speech-bubble [class*="text-slate-200"],
+      .speech-bubble [class*="text-slate-300"],
+      .speech-bubble [class*="text-slate-400"] {
+        color: #334155 !important;
+      }
+
+      /* Tarjetas individuales dentro de parlamentos: permanecen unidas sin partirse a la mitad */
+      .speech-bubble [class*="bg-slate-950"],
+      .speech-bubble [class*="bg-slate-900"],
+      .speech-bubble [class*="bg-red-950"],
+      .speech-bubble [class*="bg-sky-950"],
+      .speech-bubble [class*="bg-amber-950"],
+      .speech-bubble .grid,
+      blockquote {
+        background: #f8fafc !important;
+        border: 1px solid #cbd5e1 !important;
+        border-radius: 6pt !important;
+        padding: 8pt 11pt !important;
+        margin: 8pt 0 !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+      }
+
+      .speech-bubble [class*="bg-red-950"] {
+        background: #fef2f2 !important;
+        border: 1px solid #fca5a5 !important;
+      }
+
+      .speech-bubble [class*="bg-sky-950"] {
+        background: #f0f9ff !important;
+        border: 1px solid #bae6fd !important;
+      }
+
+      /* Citas y frases destacadas */
+      blockquote {
+        border-left: 4px solid #dc2626 !important;
+        font-style: italic !important;
+      }
+
+      blockquote * {
+        color: #0f172a !important;
+      }
+
+      /* Badges y Pastillas */
+      .slide-badge {
+        background: #fef2f2 !important;
+        border: 1px solid #fca5a5 !important;
+        border-left: 4px solid #dc2626 !important;
+        color: #991b1b !important;
+      }
+
+      .dynamic-badge {
+        background: #f0fdf4 !important;
+        border: 1px solid #bbf7d0 !important;
+        border-left: 4px solid #16a34a !important;
+        color: #166534 !important;
+      }
+
+      .psych-badge {
+        background: #faf5ff !important;
+        border: 1px solid #e9d5ff !important;
+        border-left: 4px solid #9333ea !important;
+        color: #6b21a8 !important;
+      }
+    }
+  </style>
+</head>
+<body class="min-h-screen pb-24">
+
+  <!-- TOP STICKY BAR -->
+  <header class="sticky top-0 z-50 bg-slate-950/90 backdrop-blur-md border-b border-slate-800 px-4 sm:px-8 py-3.5 flex flex-wrap items-center justify-between gap-4">
+    <div class="flex items-center space-x-3">
+      <div class="h-9 w-9 rounded-xl bg-gradient-to-tr from-red-600 via-rose-600 to-blue-700 flex items-center justify-center font-black text-white text-base shadow-lg shadow-red-950/40">
+        M
+      </div>
+      <div>
+        <div class="flex items-center gap-2">
+          <h1 class="text-sm sm:text-base font-extrabold text-white tracking-tight">Maia | Guion para Brokers (60 Min)</h1>
+          <span class="text-[10px] sm:text-xs font-bold px-2 py-0.5 rounded-full bg-red-950/80 text-red-400 border border-red-500/30 uppercase tracking-wide">Exclusivo Brokers & Owners</span>
+        </div>
+        <p class="text-xs text-slate-400">Convención Nacional RE/MAX Costa Rica 2026</p>
+      </div>
+    </div>
+
+    <!-- QUICK UTILITIES & CONTROLS -->
+    <div class="flex items-center gap-2 sm:gap-3 flex-wrap">
+      <!-- Font Size Controller -->
+      <div class="flex items-center bg-slate-900 border border-slate-800 rounded-lg p-1 text-xs text-slate-300">
+        <button onclick="changeFontSize(-1)" class="px-2 py-0.5 hover:bg-slate-800 rounded font-bold" title="Reducir letra">A-</button>
+        <span id="fontSizeDisplay" class="px-1.5 font-mono text-[11px] text-sky-400">100%</span>
+        <button onclick="changeFontSize(1)" class="px-2 py-0.5 hover:bg-slate-800 rounded font-bold" title="Aumentar letra">A+</button>
+      </div>
+
+      <!-- Live Chronometer / Speech Timer -->
+      <div class="flex items-center bg-slate-900 border border-slate-800 rounded-lg px-2.5 py-1 text-xs">
+        <span class="text-slate-400 mr-1.5">⏱️</span>
+        <span id="timerDisplay" class="font-mono font-bold text-sky-400">00:00</span>
+        <button id="timerBtn" onclick="toggleTimer()" class="ml-2 px-1.5 py-0.5 bg-sky-950 hover:bg-sky-900 text-sky-300 border border-sky-800 rounded text-[10px] font-semibold">Iniciar</button>
+        <button onclick="resetTimer()" class="ml-1 text-slate-500 hover:text-slate-300 text-[10px]">↺</button>
+      </div>
+
+      <!-- Print Button -->
+      <button onclick="window.print()" title="Imprimir o Exportar PDF (P)" class="px-2.5 py-1 bg-slate-900 hover:bg-slate-800 border border-slate-800 text-emerald-300 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition shadow">
+        <span>🖨️</span> <span>Imprimir / PDF</span>
+      </button>
+
+      <!-- Paper / Dark Mode Toggle -->
+      <button onclick="togglePaperMode()" class="px-2.5 py-1 bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-300 rounded-lg text-xs font-medium flex items-center gap-1.5 transition">
+        <span id="themeIcon">☀️</span> <span class="hidden sm:inline">Modo Papel</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- CONTENT CONTAINER -->
+  <main id="contentContainer" class="max-w-5xl mx-auto px-4 sm:px-6 pt-8 space-y-10 transition-all duration-200">
+
+    <!-- HERO / TITLE CARD -->
+    <div class="hero-card relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 border-2 border-red-600/30 rounded-3xl p-6 sm:p-10 shadow-2xl">
+      <div class="relative z-10 space-y-4">
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="px-3 py-1 bg-red-600/20 text-red-400 border border-red-500/30 rounded-full text-xs font-bold uppercase tracking-wider">
+            Keynote Hablado (60 Minutos)
+          </span>
+          <span class="px-3 py-1 bg-blue-950 text-blue-300 border border-blue-800 rounded-full text-xs font-semibold">
+            Audiencia: Brokers, Owners & Directores
+          </span>
+        </div>
+
+        <h1 class="text-2xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-tight">
+          Arquitectos del Potencial Humano: <br>
+          <span class="bg-gradient-to-r from-red-400 via-rose-300 to-sky-400 bg-clip-text text-transparent">
+            El Rol del Broker, la Tríada de Selección Psicológica y la Retención por Propósito
+          </span>
+        </h1>
+
+        <p class="text-sm sm:text-base text-slate-300 font-medium leading-relaxed max-w-4xl">
+          <strong>Ponente:</strong> Maia | <em>Máster en Psicología General | Evaluadora de Perfiles Psicológicos y Aptitud | Coach de Vida y Negocios | Coach de Producción para +120 agentes RE/MAX</em>
+        </p>
+
+        <div class="pt-2 border-t border-slate-800/80 flex flex-wrap gap-4 text-xs text-slate-400">
+          <div><strong class="text-white">Formato:</strong> Discurso narrativo, hablado palabra por palabra, con dinamismo escénico, casos reales y análisis psicológico.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- QUICK NAVIGATION BAR -->
+    <nav class="bg-slate-900/80 border border-slate-800 rounded-2xl p-3 flex flex-wrap items-center justify-center gap-2 text-xs font-medium sticky top-20 z-40 backdrop-blur-md">
+      <a href="#bloque1" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 transition">1. Trabajo Invisible & Cultura (00-08m)</a>
+      <a href="#bloque2" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 transition">2. Agente vs Team Leader vs Broker (08-20m)</a>
+      <a href="#bloque3" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 transition">3. La Tríada Psicológica (20-30m)</a>
+      <a href="#bloque4" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 transition">4. STAR, Metaanálisis & Propósito (30-45m)</a>
+      <a href="#bloque5" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 transition">5. Retención, Pigmalión & Termostato (45-54m)</a>
+      <a href="#bloque6" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 transition">6. Cierre & Legado (54-60m)</a>
+    </nav>
+
+    <!-- ========================================================================= -->
+    <!-- BLOQUE 1 -->
+    <!-- ========================================================================= -->
+    <section id="bloque1" class="block-section bg-slate-900/60 border border-slate-800 rounded-3xl p-6 sm:p-8 space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-4">
+        <div class="flex items-center gap-2">
+          <span class="h-7 w-7 rounded-lg bg-red-600 text-white font-black text-xs flex items-center justify-center">01</span>
+          <h2 class="text-lg sm:text-xl font-bold text-white">EL TRABAJO INVISIBLE Y LA TRASCENDENCIA DEL BROKER</h2>
+        </div>
+        <span class="text-xs font-mono font-bold px-2.5 py-1 bg-slate-800 text-sky-400 rounded-lg">00:00 - 08:00 (8 min)</span>
+      </div>
+
+      <div class="stage-note p-3.5 rounded-xl text-xs text-amber-200 space-y-1">
+        <div class="font-bold flex items-center gap-1.5"><span>🎭</span> NOTA DE ESCENARIO & LENGUAJE CORPORAL:</div>
+        <p>Apertura firme, reflexiva y cálida. Pausa de 3 segundos antes de hablar. Mira a los ojos de los brokers en las primeras filas. Conecta con el peso y la soledad que sienten como líderes.</p>
+      </div>
+
+      <div class="space-y-4 text-slate-200 text-base leading-relaxed">
+        <div class="speech-bubble p-4 sm:p-5 rounded-2xl space-y-3">
+          <p>Buenos días a todos.</p>
+          <p>Quiero empezar haciéndoles una pregunta que rara vez se hace en el escenario principal de nuestras convenciones.</p>
+          <p>En todos los eventos de RE/MAX vemos desfilar por la alfombra roja a los agentes: premiamos al Club Ejecutivo, al 100% Club, al Platinum, al Diamond, a los Top Producers de cada región. Y está extraordinariamente bien, porque su producción es el motor visible de esta marca.</p>
+          <p>Pero hoy no estamos en el salón general. Hoy estamos en la sala donde se sientan los líderes. Y yo quiero preguntarles con el corazón en la mano:</p>
+          <p class="font-semibold text-sky-300">¿Quién aplaude al Broker un domingo a las diez de la noche cuando un agente te llama angustiado, llorando, porque se le cayó una operación a minutos de la firma y siente que su vida no sirve para nada?</p>
+          <p class="font-semibold text-rose-300">¿Quién sostiene al Broker cuando el mercado se contrae, cuando los costes de la oficina aprietan, cuando las metas no se alcanzan... o cuando un agente al que formaste desde cero, al que le diste tu tiempo, tu dinero, tus secretos y tu corazón, decide darte la espalda y marcharse a la competencia?</p>
+          <p class="text-lg font-bold text-white">¿Quién cuida al que cuida a todos los demás?</p>
+          <p>Miren un momento a sus costados. Miren a los compañeros que tienen a la izquierda y a la derecha. Durante los próximos 60 minutos, el protagonista de esta sala no es el agente: <strong>son ustedes</strong>.</p>
+          <p>Vengo de España, de la Costa Blanca. Trabajo a diario como Coach de Producción con más de 120 agentes y sus respectivos Brokers en más de cinco oficinas. Pero además de coach, soy psicóloga. Y desde hace años, una parte central de mi trabajo consiste en realizar <strong>evaluaciones de aptitud y perfil psicológico de candidatos</strong> que quieren entrar a nuestro negocio.</p>
+          <p>Y si hay una certeza absoluta que aprendí en este camino, es esta:</p>
+          <blockquote class="border-l-4 border-red-500 pl-4 py-2 italic font-semibold text-white bg-red-950/30 rounded-r-xl">
+            «RE/MAX no es una empresa de bienes raíces que gestiona personas. RE/MAX es una empresa de desarrollo personal y transformación humana que, como consecuencia de su grandeza, comercializa bienes raíces.»
+          </blockquote>
+          <p>Quiero que dimensionemos esto desde el primer minuto: <strong>ustedes tienen un trabajo maravilloso</strong>. Es un trabajo que muy poca gente en el mundo sabe hacer bien. Tienen una profesión con una consecuencia directa e imborrable en la vida de seres humanos reales. Ustedes son quienes acompañan a una persona a salir de su zona de confort, a derribar sus propios techos de cristal, a descubrir talentos que ni ellos sabían que tenían, y a construir la libertad financiera para sus familias.</p>
+          <p>A muchos de ustedes esto les sale de manera natural, pero hoy quiero que le demos el peso y la jerarquía que realmente tiene.</p>
+          <p>Y precisamente por el impacto tan profundo que tienen sobre otros, el liderazgo de la oficina no puede dejarse al azar. Ustedes tienen que construir una <strong>cultura propia</strong>, con una visión, una misión y unos valores innegociables.</p>
+          <p>¿Saben por qué? Porque el día que el mercado se complica, el día que las cosas se ponen difíciles... si yo como agente veo entrar a mi Broker a la oficina desesperado, quejándose porque no se venden propiedades, con cara de pánico... ¿qué creen que voy a pensar yo? Me voy a desesperar el triple, voy a entrar en parálisis y voy a querer salir corriendo.</p>
+          <p class="font-bold text-sky-400">El Broker es el faro. Si el faro tiembla, los barcos naufragan.</p>
+          <p>Pero para ser ese faro sólido, lo primero que tenemos que hacer hoy es quitarnos las vendas y hablar de la gran confusión que reina en el sector sobre nuestro verdadero rol.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- BLOQUE 2 -->
+    <!-- ========================================================================= -->
+    <section id="bloque2" class="block-section bg-slate-900/60 border border-slate-800 rounded-3xl p-6 sm:p-8 space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-4">
+        <div class="flex items-center gap-2">
+          <span class="h-7 w-7 rounded-lg bg-red-600 text-white font-black text-xs flex items-center justify-center">02</span>
+          <h2 class="text-lg sm:text-xl font-bold text-white">LA TRAMPA DEL ROL — AGENTE TOP PRODUCER VS. TEAM LEADER VS. BROKER</h2>
+        </div>
+        <span class="text-xs font-mono font-bold px-2.5 py-1 bg-slate-800 text-sky-400 rounded-lg">08:00 - 20:00 (12 min)</span>
+      </div>
+
+      <div class="stage-note p-3.5 rounded-xl text-xs text-amber-200 space-y-1">
+        <div class="font-bold flex items-center gap-1.5"><span>🎭</span> NOTA DE ESCENARIO & LENGUAJE CORPORAL:</div>
+        <p>Avanza hacia el centro del proscenio. Tono reflexivo y directo. Confronta con calidez pero con total contundencia. El objetivo es que los brokers reflexionen sobre su uso real del tiempo.</p>
+      </div>
+
+      <div class="space-y-4 text-slate-200 text-base leading-relaxed">
+        <div class="speech-bubble p-4 sm:p-5 rounded-2xl space-y-3">
+          <p>Hablemos con total crudeza: en el mundo inmobiliario existe una concepción profundamente errada. La creencia de que si a una persona le va bien vendiendo casas, si es un fenómeno captando y cerrando operaciones, automáticamente tiene que ser un buen Team Leader o un gran Broker.</p>
+          <p>Y la realidad es que a veces sí... pero la gran mayoría de las veces, <strong>no</strong>.</p>
+          <p>Veámoslo con un ejemplo cotidiano en sus oficinas. Imaginen que tienen dos agentes Top Producers. Dos máquinas de facturar.</p>
+          <p>El <strong>primer agente</strong> tiene habilidades comerciales extraordinarias para la compraventa, pero además tiene empatía organizativa, paciencia pedagógica, vocación de servicio y capacidad para articular voluntades. Si a ese agente lo promueves a Team Leader, va a florecer: coordinará tareas, guiará a los suyos, gestionará dinámicas grupales y multiplicará el negocio.</p>
+          <p>Pero miremos al <strong>segundo agente</strong>. Es un Top Producer salvaje, un cerrador letal, un lobo solitario brillante. Pero carece de habilidades de gestión humana, no tiene paciencia para explicar procesos tres veces, es desorganizado con la estructura ajena y le cuesta delegar. Si a ese agente lo empujas o lo tentás con armar un equipo para que sea Team Leader... <strong>podes estar firmando el certificado de defunción de su carrera inmobiliaria</strong>.</p>
+          <p>Lo vas a frustrar, va a descuidar su propia producción personal para apagar fuegos de otros, su equipo se va a desintegrar por falta de liderazgo efectivo, y habrás perdido a tu mejor vendedor para ganar a un pésimo gestor.</p>
+          <p>Ser Team Leader requiere un set de habilidades completamente diferente al de ser un simple agente:</p>
+          <ul class="list-disc pl-6 space-y-1 text-slate-300">
+            <li>Coordinación estratégica de equipos.</li>
+            <li>Gestión rigurosa de tareas y calendarios compartidos.</li>
+            <li>Resolución de fricciones interpersonales internas.</li>
+            <li>Y una generosidad directiva donde tu prioridad ya no es tu ego individual, sino el éxito de las personas que coordinas.</li>
+          </ul>
+          <p class="pt-2">Y esto nos da el pie directo al tercer perfil: <strong>El Broker</strong>.</p>
+          <p>El Broker necesita, como base ineludible, las habilidades de liderazgo del Team Leader, pero elevadas a un nivel empresarial, estratégico y cultural.</p>
+          <p class="font-semibold text-rose-300">Y escuchen bien lo que les voy a decir como psicóloga: un Broker puede o no haber sido agente inmobiliario en su vida pasada. Da exactamente igual.</p>
+          <p>Las habilidades que necesita un Broker para tener una oficina multimillonaria son completamente distintas a las habilidades de vender casas. No tiene por qué haber sido el mejor agente, ni siquiera tiene por qué haber vendido un inmueble.</p>
+          
+          <div class="p-4 rounded-xl bg-slate-950/80 border border-sky-800/40 my-3">
+            <h4 class="text-sky-400 font-bold text-sm mb-1">Caso Testigo Real en España:</h4>
+            <p class="text-sm text-slate-300">Uno de los brokers más importantes de todo el país, cuya oficina está en el Top 2 absoluto de producción nacional año tras año, durante décadas fue el <strong>Director de Recursos Humanos de Telecinco</strong>, una de las cadenas de televisión más grandes de Europa. Su principal potencial estaba en las personas: saber cómo liderar, cómo gestionar egos, cómo motivar a perfiles complejos, cómo detectar quién servía para una tarea y quién no. Cuando abrió su oficina inmobiliaria, <strong>nunca en su vida había vendido una casa</strong>. Y sin embargo, construyó un imperio.</p>
+          </div>
+
+          <p>Por el contrario, veo constantemente a brokers que durante 15 o 20 años fueron agentes estrella, abren su propia oficina y no logran despegar. ¿Por qué? Porque son muy buenos vendiendo el proyecto en una primera entrevista para meter gente a la oficina, pero una vez que la gente está adentro, <strong>no tienen las herramientas psicológicas ni el liderazgo para exprimir y sostener el potencial humano al máximo</strong>.</p>
+          <p>Por eso hoy quiero confrontarlos con mucho cariño, pero con total firmeza:</p>
+          <p class="text-lg font-bold text-amber-300">Sé muy bien que muchos de ustedes, los que están sentados frente a mí en esta sala, además de dirigir la oficina, siguen vendiendo propiedades por su cuenta.</p>
+          <p>Y les propongo un ejercicio de honestidad brutal: al salir de esta charla, revisen su agenda de las últimas cuatro semanas. Miren qué porcentaje de su tiempo le dedican a liderar, reclutar, formar, coachear y sostener a su gente... y qué porcentaje le dedican a salir a captar y mostrar casas para ganarse una comisión directa.</p>
+          <p class="font-bold text-white text-base">Y ahí vamos a definir con claridad qué son: ¿son verdaderos Brokers o son agentes con título de broker?</p>
+          <p>Muchachos, espabilen. Si ustedes están en la calle compitiéndole las captaciones a sus propios asesores para pagar la luz de la oficina, no están construyendo una empresa: están tapando agujeros con el cuerpo.</p>
+          <p>El trabajo sagrado del Broker descansa sobre tres pilares no negociables:</p>
+          <ol class="list-decimal pl-6 space-y-1 text-slate-300">
+            <li><strong>Reclutar</strong> sistemáticamente para crecer.</li>
+            <li><strong>Retener</strong> estratégicamente para que los buenos se queden y prosperen.</li>
+            <li><strong>Desarrollar</strong> el potencial humano de cada individuo que confió en ustedes.</li>
+          </ol>
+          <p class="pt-2 font-bold text-sky-400 text-lg">Y todo esto converge en una sola palabra: INSPIRAR.</p>
+          <p>En nuestro modelo de negocio no hay un sueldo fijo que ate a la gente a una silla. Nadie viene a RE/MAX porque le prometiste una nómina a fin de mes. Cuando un asesor decide sumarse a tu oficina y quedarse a pelearla, es porque vio una oportunidad en el negocio, pero fundamentalmente porque <strong>vio un potencial en ti como líder</strong>. Compró tu energía, compró tu visión y se siente inspirado por tu coherencia.</p>
+          <p>Si no inspiras, no lideras; y si no lideras, te conviertes en un simple arrendador de escritorios.</p>
+          <p>Ahora bien: para poder desarrollar e inspirar a la gente correcta, primero tenemos que aprender a seleccionarla. Y aquí es donde entramos en el corazón de la evaluación psicológica.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- BLOQUE 3 -->
+    <!-- ========================================================================= -->
+    <section id="bloque3" class="block-section bg-slate-900/60 border border-slate-800 rounded-3xl p-6 sm:p-8 space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-4">
+        <div class="flex items-center gap-2">
+          <span class="h-7 w-7 rounded-lg bg-red-600 text-white font-black text-xs flex items-center justify-center">03</span>
+          <h2 class="text-lg sm:text-xl font-bold text-white">LA ILUSIÓN DEL «PERFIL PERFECTO» Y LA TRÍADA PSICOLÓGICA</h2>
+        </div>
+        <span class="text-xs font-mono font-bold px-2.5 py-1 bg-slate-800 text-sky-400 rounded-lg">20:00 - 30:00 (10 min)</span>
+      </div>
+
+      <div class="stage-note p-3.5 rounded-xl text-xs text-amber-200 space-y-1">
+        <div class="font-bold flex items-center gap-1.5"><span>🎭</span> NOTA DE ESCENARIO:</div>
+        <p>Sonríe con complicidad. Haz la pregunta al público pidiendo que levanten la mano. Conecta con el dolor compartido de los fichajes estrella frustrados.</p>
+      </div>
+
+      <div class="space-y-4 text-slate-200 text-base leading-relaxed">
+        <div class="speech-bubble p-4 sm:p-5 rounded-2xl space-y-3">
+          <p>Levanten la mano los Brokers que alguna vez hayan vivido esta historia exacta:</p>
+          <p>Llega a su oficina una persona con un currículum que parece salido de Harvard. Traje impecable, corbata de seda, 15 años como gerente de cuentas en un banco internacional multinacional, maestría, léxico impecable y una libreta de contactos repleta de empresarios de alto poder adquisitivo.</p>
+          <p>Ustedes se frotan las manos, sonríen y dicen: <em>«¡Dios mío, me acaba de caer del cielo el próximo Top Producer de Costa Rica!»</em>. Le pagan los cursos, lo presentan en la reunión de equipo con fuegos artificiales... y a los cuatro meses, esa persona desaparece de la oficina, no captó una sola propiedad en exclusiva y se va diciendo por los rincones que <em>«este negocio es una estafa y no funciona»</em>.</p>
+          <p>¿Les pasó? Claro que sí. A todos nos ha pasado.</p>
+          <p>Y por el otro lado: llega a su oficina una persona sin ninguna experiencia comercial previa. Quizás una maestra de primaria, una persona que atendía en un comercio modesto, o alguien que viene de sufrir una quiebra familiar o un divorcio demoledor. No tiene un CV deslumbrante ni contactos de lujo. Pero tiene una mirada particular, un hambre distinta. Pasa un año... y esa persona está en este mismo escenario recogiendo un premio del Club 100% o del Club Platinum.</p>
+          <p class="font-semibold text-sky-300">¿Por qué ocurre este fenómeno?</p>
+          <p>Como psicóloga, me dediqué a investigar este patrón a fondo. Y la respuesta es contundente:</p>
+          <p class="text-lg font-bold text-white">En los bienes raíces, las competencias técnicas y los títulos corporativos no predicen el éxito. Lo que predice el éxito es la estructura psicológica y la capacidad de autorregulación emocional ante la adversidad.</p>
+          <p>En el mundo corporativo tradicional, el empleado vive bajo una <strong>ilusión de certidumbre</strong>. Sabe que el día 30 cobra su sueldo, tiene un jefe que le dice exactamente qué hacer de 8 a 5, y si un cliente le da un portazo, a fin de mes su cuenta bancaria recibe exactamente los mismos dólares. El sistema corporativo amortigua su frustración.</p>
+          <p>Pero el Real Estate es un deporte de combate psicológico a la intemperie: no hay sueldo garantizado, exige autoliderazgo salvaje, y el 90% de las respuestas en la calle son un «NO» rotundo.</p>
+          <p>Por eso, cuando evaluamos a un candidato, evaluamos <strong>tres pilares psicológicos determinantes</strong>:</p>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-4">
+            <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800">
+              <h4 class="font-bold text-sky-400 text-sm mb-2">1. Tolerancia a la Incertidumbre</h4>
+              <p class="text-xs text-slate-300">Capacidad neurobiológica y emocional de mantener el foco, la calma y los hábitos de prospección cuando los resultados tangibles todavía no se ven. Disciplina sin suelo fijo.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800">
+              <h4 class="font-bold text-rose-400 text-sm mb-2">2. Resiliencia a la Frustración</h4>
+              <p class="text-xs text-slate-300">Locus de control interno e inmunidad a las 3 «P» del pesimismo (Personalización, Permanencia, Pervasividad). Entender que el rechazo es un dato operativo, no una afrenta personal.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800">
+              <h4 class="font-bold text-emerald-400 text-sm mb-2">3. Alto Umbral de Conflicto</h4>
+              <p class="text-xs text-slate-300">Templanza, madurez y capacidad de no reactividad en un negocio donde la fricción entre compradores, vendedores, abogados y compañeros es diaria.</p>
+            </div>
+          </div>
+
+          <p>Si reclutas a alguien sin estos tres pilares, no importa cuántos cursos de ventas le pagues: ante el primer obstáculo real, su sistema nervioso va a colapsar.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- BLOQUE 4 -->
+    <!-- ========================================================================= -->
+    <section id="bloque4" class="block-section bg-slate-900/60 border border-slate-800 rounded-3xl p-6 sm:p-8 space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-4">
+        <div class="flex items-center gap-2">
+          <span class="h-7 w-7 rounded-lg bg-red-600 text-white font-black text-xs flex items-center justify-center">04</span>
+          <h2 class="text-lg sm:text-xl font-bold text-white">ENTREVISTAS POR COMPETENCIAS: METANÁLISIS, UMBRAL DEL CONFLICTO Y PROPÓSITO</h2>
+        </div>
+        <span class="text-xs font-mono font-bold px-2.5 py-1 bg-slate-800 text-sky-400 rounded-lg">30:00 - 45:00 (15 min)</span>
+      </div>
+
+      <div class="stage-note p-3.5 rounded-xl text-xs text-amber-200 space-y-1">
+        <div class="font-bold flex items-center gap-1.5"><span>🎭</span> NOTA DE ESCENARIO:</div>
+        <p>Tono didáctico, ameno y sumamente práctico. Cuenta la anécdota real del bidón de agua con sentido del humor pero enfatizando el rigor del metaanálisis psicológico.</p>
+      </div>
+
+      <div class="space-y-4 text-slate-200 text-base leading-relaxed">
+        <div class="speech-bubble p-4 sm:p-5 rounded-2xl space-y-3">
+          <p>¿Cómo evaluamos esto en la práctica? ¿Cómo dejamos de equivocarnos al reclutar?</p>
+          <p>Primero: <strong>prohibido hacer entrevistas tradicionales de formulario</strong>.</p>
+          <p>Si te sientas con un candidato y le preguntas: <em>«¿Usted se considera una persona perseverante, trabajadora y que sabe resolver problemas bajo presión?»</em>, ¿qué creen que les va a contestar? ¡Por supuesto que sí! Nadie va a una entrevista a decir: <em>«Mire, Broker, la verdad es que ante el primer problema me angustio, me meto a la cama y no contesto el teléfono por cuatro días»</em>.</p>
+          <p>Tenemos que aplicar la <strong>Entrevista por Competencias Conductuales (Metodología STAR: Situación, Tarea, Acción y Resultado)</strong>.</p>
+          <blockquote class="border-l-4 border-sky-500 pl-4 py-2 italic font-semibold text-white bg-sky-950/30 rounded-r-xl">
+            «La mejor predicción de cómo una persona va a actuar en el futuro ante una situación crítica no son sus buenas intenciones ni sus discursos; es cómo actuó realmente en situaciones similares de su pasado.»
+          </blockquote>
+          <p>Por eso, una entrevista no puede ser una charla dicotómica de preguntas cerradas de sí o no. Tiene que ser <strong>expansiva, abierta y de indagación profunda</strong>.</p>
+          <p>Entrevistar a un candidato no es sentarse a revisar un currículum para saber qué cargos tuvo o qué estudió. Es una <strong>herramienta de evaluación psicológica</strong>. Y como líderes y evaluadores, tenemos que desarrollar una habilidad superior: <strong>el metaanálisis</strong>.</p>
+          
+          <h3 class="text-lg font-bold text-amber-300 pt-2">El Arte del Metaanálisis: Escuchar «Desde Dónde» Habla</h3>
+          <p>El metaanálisis es la capacidad de escuchar más allá de las palabras literales que el candidato te está diciendo. Mientras una persona te cuenta una anécdota de su vida, en la estructura de su relato te está revelando sin darse cuenta sus miedos más profundos, sus inseguridades, sus sesgos cognitivos, su grado de madurez emocional y qué piensa realmente sobre la autoridad, el dinero, el esfuerzo y los demás.</p>
+          <p>Tu trabajo como Broker no es solo oír la historia; es preguntarte por dentro: <em>«¿Desde dónde me está diciendo esto? ¿Me lo dice desde el rol de víctima o desde la responsabilidad? ¿Me lo dice desde la soberbia o desde la humildad del que aprende? ¿Me lo dice desde la necesidad desesperada o desde la convicción de construir?»</em>.</p>
+
+          <div class="p-4 rounded-xl bg-slate-950/80 border border-amber-800/40 my-3">
+            <h4 class="text-amber-400 font-bold text-sm mb-1">La Prueba de Fuego: La Pregunta de Conflicto y el Bidón de Agua</h4>
+            <p class="text-sm text-slate-300">Les cuento un caso real que me ocurrió a mí personalmente evaluando a un candidato para una oficina RE/MAX: le pregunté cuál había sido la situación más difícil o conflictiva en su último trabajo y cómo la resolvió. Puso cara de enorme gravedad y me dijo: <em>«Bueno, un día en la oficina se terminó el agua del dispensador, mis compañeros no estaban y tuve que cambiar el bidón de 20 litros yo solo. Fue sumamente estresante y tenso, pero logré levantarlo y salvar el día»</em>.</p>
+            <p class="text-sm text-slate-300 pt-2">Para mí, cambiar un bidón de agua es una tarea física de dos minutos. Pero para él, era el pico de conflicto de su vida. <strong>¿Qué me dice eso sobre su umbral de tolerancia a la frustración?</strong> Que el día que un comprador le retire una oferta a dos horas de firmar, ese agente entra en crisis existencial.</p>
+          </div>
+
+          <p>Por eso, cuando hagan preguntas de conflicto, apliquen el <strong>doble filtro</strong>:</p>
+          <ul class="list-disc pl-6 space-y-1 text-slate-300">
+            <li><strong>El Umbral de Conflicto:</strong> ¿Qué eligió contarte? ¿Un drama superficial de pasillo o un problema estructural complejo resuelto con madurez?</li>
+            <li><strong>El Patrón de Afrontamiento:</strong> ¿Es la víctima inocente en su relato o asumió la responsabilidad de tener una conversación incómoda y solucionar el tema?</li>
+          </ul>
+
+          <h3 class="text-lg font-bold text-sky-300 pt-3">La Indagación del Propósito y el Business Plan</h3>
+          <p>Y luego entramos en un punto crucial: <strong>indagar el Propósito</strong>.</p>
+          <p>Tener un propósito claro no es una competencia técnica, pero es lo que te permite entender la madurez existencial del candidato y qué nivel de conciencia tiene sobre la realidad de este negocio.</p>
+          <p>Aquí tenemos que ser <strong>brutalmente sinceros, pero a la vez profundamente motivadores</strong>:</p>
+          <p class="italic text-slate-300 pl-4 border-l-2 border-slate-700">«Este negocio tiene el poder de cambiarte la vida por completo. Te lo digo con certeza absoluta porque lo he visto con mis propios ojos decenas de veces. He visto a personas comunes comprarse su casa, pagar deudas asfixiantes y darle un futuro brillante a su familia. Pero este negocio no es fácil, no es mágico y no es para cualquiera. Exige un precio alto en disciplina y coraje».</p>
+          <p>Y acto seguido, los invito a conectar su propósito con un <strong>Business Plan realista</strong>:</p>
+          <ol class="list-decimal pl-6 space-y-1 text-slate-300">
+            <li><strong>El Propósito Sagrado (El Para Qué):</strong> La raíz emocional profunda (libertad, familia, techo propio).</li>
+            <li><strong>La Meta Tangible (El Qué):</strong> Cuánto dinero e hito material representa.</li>
+            <li><strong>El Business Plan (El Cómo Cuantificado):</strong> Las acciones operativas necesarias (llamadas, captaciones, visitas), dimensionadas de forma realista a 1, 2 o 3 años.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- BLOQUE 5 -->
+    <!-- ========================================================================= -->
+    <section id="bloque5" class="block-section bg-slate-900/60 border border-slate-800 rounded-3xl p-6 sm:p-8 space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-4">
+        <div class="flex items-center gap-2">
+          <span class="h-7 w-7 rounded-lg bg-red-600 text-white font-black text-xs flex items-center justify-center">05</span>
+          <h2 class="text-lg sm:text-xl font-bold text-white">RETENCIÓN, EFECTO PIGMALIÓN Y LIDERAZGO TRANSFORMACIONAL</h2>
+        </div>
+        <span class="text-xs font-mono font-bold px-2.5 py-1 bg-slate-800 text-sky-400 rounded-lg">45:00 - 54:00 (9 min)</span>
+      </div>
+
+      <div class="stage-note p-3.5 rounded-xl text-xs text-amber-200 space-y-1">
+        <div class="font-bold flex items-center gap-1.5"><span>🎭</span> NOTA DE ESCENARIO:</div>
+        <p>Baja el volumen. Crea un ambiente íntimo y reflexivo. Dramatiza la conversación de rescate One-on-One con pasión y convicción.</p>
+      </div>
+
+      <div class="space-y-4 text-slate-200 text-base leading-relaxed">
+        <div class="speech-bubble p-4 sm:p-5 rounded-2xl space-y-3">
+          <p>Hablemos de la mayor sangría de nuestras oficinas: la deserción de agentes con potencial.</p>
+          <p>¿Por qué se marchan? Porque como industria solemos caer en <strong>la trampa del «Cómo»</strong>.</p>
+          <p>Pasamos meses enteros enseñándoles el «Cómo» (cómo prospectar, cómo hacer objeciones, cómo subir fotos al CRM). Pero la cruda realidad es que el «Cómo» en Real Estate es doloroso, incómodo y frustrante.</p>
+          <p>Y si tú a un agente solo le diste el «Cómo», pero nunca descubriste su <strong>«Para Qué»</strong>... el día que el dolor del rechazo golpee su puerta, el agente dirá: <em>«Esto no vale la pena»</em> y se irá.</p>
+          <p class="font-bold text-sky-400">Viktor Frankl: «Quien tiene un porqué para vivir, puede soportar casi cualquier cómo».</p>
+          <p>El Broker no es un policía que solo revisa planillas de captación. <strong>El Broker es el guardián del «Para Qué» de su gente.</strong></p>
+
+          <div class="p-4 rounded-xl bg-red-950/40 border border-red-800/50 my-3">
+            <h4 class="text-red-400 font-bold text-sm mb-1">La Intervención de Rescate One-on-One:</h4>
+            <p class="text-sm text-slate-200 italic">«Mírame a los ojos. Hace seis meses nos sentamos en esta misma mesa. Me contaste que estabas aquí porque no querías volver a pasar la vergüenza de no poder pagar la escuela de tus hijos. Me dijiste que estabas dispuesto a pagar el precio de tu libertad. Hoy el mercado te dio una bofetada. Pero tus hijos siguen necesitando ese futuro, y tu sueño sigue intacto. Yo sigo creyendo en ti al 100%. Ahora límpiate las lágrimas, respira profundo, y vamos a planificar juntos las llamadas de esta tarde».</p>
+          </div>
+
+          <p>Eso no es administración. <strong>Eso es liderazgo que salva vidas.</strong> Y genera una lealtad indestructible.</p>
+          <p>Y esto se amplifica con el <strong>Efecto Pigmalión</strong> (Harvard): las expectativas que tienes sobre tu gente moldean directamente sus resultados.</p>
+          <p>Para blindar la cultura de tu oficina, necesitas aplicar tres principios:</p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-3">
+            <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800">
+              <h4 class="font-bold text-sky-400 text-sm mb-1">1. Normalizar el Fracaso</h4>
+              <p class="text-xs text-slate-300">El error como dato de aprendizaje. Desdramatizar el tropiezo y premiar el coraje de atreverse.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800">
+              <h4 class="font-bold text-purple-400 text-sm mb-1">2. Seguridad Psicológica</h4>
+              <p class="text-xs text-slate-300">Crear un espacio donde cualquiera pueda levantar la mano y pedir ayuda con vulnerabilidad sin temor al castigo.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800">
+              <h4 class="font-bold text-amber-400 text-sm mb-1">3. El Broker Termostato</h4>
+              <p class="text-xs text-slate-300">Un termómetro mide la temperatura; un termostato la regula. Si el mercado tiembla, el Broker aporta calma, foco y dirección.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- BLOQUE 6 -->
+    <!-- ========================================================================= -->
+    <section id="bloque6" class="block-section bg-slate-900/60 border border-slate-800 rounded-3xl p-6 sm:p-8 space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-4">
+        <div class="flex items-center gap-2">
+          <span class="h-7 w-7 rounded-lg bg-red-600 text-white font-black text-xs flex items-center justify-center">06</span>
+          <h2 class="text-lg sm:text-xl font-bold text-white">CIERRE — EL LEGADO DE LOS ARQUITECTOS HUMANOS</h2>
+        </div>
+        <span class="text-xs font-mono font-bold px-2.5 py-1 bg-slate-800 text-sky-400 rounded-lg">54:00 - 60:00 (6 min)</span>
+      </div>
+
+      <div class="stage-note p-3.5 rounded-xl text-xs text-amber-200 space-y-1">
+        <div class="font-bold flex items-center gap-1.5"><span>🎭</span> NOTA DE ESCENARIO:</div>
+        <p>Avanza hacia el frente. Máxima presencia, emoción y convicción. Cierre inspirador que despierte una ovación de pie.</p>
+      </div>
+
+      <div class="space-y-4 text-slate-200 text-base leading-relaxed">
+        <div class="speech-bubble p-4 sm:p-5 rounded-2xl space-y-3">
+          <p>Queridos Brokers de Costa Rica:</p>
+          <p>Quiero que hoy salgan de esta sala con la cabeza muy alta y con el pecho lleno de orgullo por la profesión que eligieron.</p>
+          <p>Sé que muchas veces su camino se siente solitario. Sé que hay noches donde no pueden dormir pensando en cómo sostener la estructura, en cómo motivar a quienes parecen apagados y en cómo absorber la incertidumbre de decenas de familias que confían en su liderazgo.</p>
+          <p>Pero quiero que recuerden esto cada mañana cuando giren la llave para abrir las puertas de su oficina:</p>
+          <p class="text-slate-300">Cada vez que un agente de su equipo sube a este escenario a recibir un premio...<br>
+          Cada vez que una madre soltera que entró temblando a su oficina logra comprarse su propia casa gracias a las comisiones que generó bajo su guía...<br>
+          Cada vez que un ser humano que venía de un empleo gris sintiéndose invisible recupera su dignidad, su brillo propio y su libertad financiera...</p>
+          <p class="text-xl font-black text-white">Esa victoria lleva la firma invisible de cada uno de ustedes.</p>
+          <p>Ustedes no son simples administradores de bienes raíces.<br>
+          Ustedes son mentores de vida.<br>
+          Ustedes son guardianes de sueños ajenos.<br>
+          Ustedes son, en el sentido más noble de la palabra, los verdaderos <strong>Arquitectos del Potencial Humano</strong>.</p>
+          <p>Salgan de esta convención a liderar con coherencia, a seleccionar con rigor psicológico por incertidumbre, frustración y conflicto, a conectar el negocio con el propósito sagrado de su gente, a ser el termostato de sus oficinas... y no olviden nunca que cuando transforman la mente de un agente, están transformando para siempre el destino de generaciones enteras.</p>
+          <p class="text-xl font-bold text-red-400 pt-2">¡Muchísimas gracias, líderes de RE/MAX Costa Rica!</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    // FONT SIZE CONTROL
+    let currentScale = 100;
+    function changeFontSize(delta) {
+      currentScale += (delta * 10);
+      if (currentScale < 70) currentScale = 70;
+      if (currentScale > 150) currentScale = 150;
+      document.getElementById('contentContainer').style.fontSize = (currentScale / 100) + 'rem';
+      document.getElementById('fontSizeDisplay').innerText = currentScale + '%';
+    }
+
+    // THEME / PAPER MODE
+    function togglePaperMode() {
+      const isPaper = document.body.classList.toggle('paper-mode');
+      const icon = document.getElementById('themeIcon');
+      icon.innerText = isPaper ? '🌙' : '☀️';
+    }
+
+    // TIMER
+    let timerInterval = null;
+    let secondsElapsed = 0;
+    function toggleTimer() {
+      const btn = document.getElementById('timerBtn');
+      if (timerInterval) {
+        clearInterval(timerInterval);
+        timerInterval = null;
+        btn.innerText = 'Reanudar';
+        btn.classList.remove('bg-rose-950', 'text-rose-300', 'border-rose-800');
+        btn.classList.add('bg-sky-950', 'text-sky-300', 'border-sky-800');
+      } else {
+        timerInterval = setInterval(() => {
+          secondsElapsed++;
+          const mins = String(Math.floor(secondsElapsed / 60)).padStart(2, '0');
+          const secs = String(secondsElapsed % 60).padStart(2, '0');
+          document.getElementById('timerDisplay').innerText = `${mins}:${secs}`;
+        }, 1000);
+        btn.innerText = 'Pausar';
+        btn.classList.remove('bg-sky-950', 'text-sky-300', 'border-sky-800');
+        btn.classList.add('bg-rose-950', 'text-rose-300', 'border-rose-800');
+      }
+    }
+    function resetTimer() {
+      if (timerInterval) clearInterval(timerInterval);
+      timerInterval = null;
+      secondsElapsed = 0;
+      document.getElementById('timerDisplay').innerText = '00:00';
+      const btn = document.getElementById('timerBtn');
+      btn.innerText = 'Iniciar';
+      btn.classList.remove('bg-rose-950', 'text-rose-300', 'border-rose-800');
+      btn.classList.add('bg-sky-950', 'text-sky-300', 'border-sky-800');
+    }
+  </script>
+</body>
+</html>

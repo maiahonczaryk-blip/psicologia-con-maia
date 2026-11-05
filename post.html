@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog · Xilema by Maia</title>
+<meta name="description" content="Blog de Xilema by Maia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="logos/final/xilema-icono.svg">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="blog.css">
+<link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a href="index.html" class="logo" aria-label="Xilema by Maia"><img class="logo-img" src="logos/final/xilema-logo-azul.svg" alt="Xilema by Maia"></a>
+      <ul>
+        <li><a href="index.html#quien">Perfil</a></li>
+        <li><a href="index.html#ayuda">Enfoque</a></li>
+        <li><a href="index.html#servicios">Servicios</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="index.html#agenda">Contacto</a></li>
+      </ul>
+      <a href="index.html#agenda" class="btn ghost">Primera sesión</a>
+    </nav>
+  </div>
+</header>
+
+<section class="post-sec">
+  <div class="wrap">
+    <article class="post" id="post"></article>
+  </div>
+</section>
+
+<footer>© 2026 Xilema by Maia · Maia Honczaryk</footer>
+
+<script src="blog/posts.js"></script>
+<script>
+  const meses=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+  const fmt=f=>{const [y,m,d]=f.split('-');return `${+d} de ${meses[+m-1]} de ${y}`};
+  const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const slug=new URLSearchParams(location.search).get('p');
+  const hoy=new Date().toLocaleDateString('sv-SE');
+  const p=window.POSTS.find(x=>x.slug===slug&&x.fecha<=hoy);
+  const el=document.getElementById('post');
+  if(p){
+    document.title=p.titulo+' · Xilema by Maia';
+    document.querySelector('meta[name=description]').content=p.resumen;
+    el.innerHTML=`
+      <a class="back" href="blog.html">← Volver al blog</a>
+      <div class="post-meta"><a href="blog.html?cat=${encodeURIComponent(p.categoria)}">${esc(p.categoria)}</a> · ${fmt(p.fecha)}</div>
+      <h1>${esc(p.titulo)}</h1>
+      <div class="post-body">${p.contenido}</div>
+      <div class="post-cta">
+        <p>¿Te has reconocido en esta nota? Hablemos de tu caso, uno a uno.</p>
+        <a href="index.html#agenda" class="btn solid">Reserva tu sesión de coaching</a>
+      </div>`;
+  }else{
+    el.innerHTML='<a class="back" href="blog.html">← Volver al blog</a><h1>Nota no encontrada</h1><p>Esta nota no existe o fue movida.</p>';
+  }
+</script>
+<script src="mobile.js"></script>
+</body>
+</html>

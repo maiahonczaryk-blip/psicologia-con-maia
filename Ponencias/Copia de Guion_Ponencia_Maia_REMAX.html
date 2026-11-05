@@ -1,0 +1,1564 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maia | Ponencia RE/MAX Costa Rica 2026 - Guion Maestro Optimizado</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
+    
+    :root {
+      --bg-main: #0b1120;
+      --text-main: #e2e8f0;
+    }
+    
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      transition: background-color 0.25s ease, color 0.25s ease;
+    }
+    
+    .serif-quote {
+      font-family: 'Lora', Georgia, serif;
+    }
+    
+    .speech-bubble {
+      background: linear-gradient(135deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.8) 100%);
+      border-left: 4px solid #38bdf8;
+    }
+    
+    .stage-note {
+      background: rgba(245, 158, 11, 0.08);
+      border-left: 4px solid #f59e0b;
+    }
+
+    .slide-badge {
+      background: rgba(99, 102, 241, 0.12);
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      border-left: 4px solid #6366f1;
+    }
+
+    .dynamic-badge {
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-left: 4px solid #10b981;
+    }
+
+    .transition-card {
+      background: rgba(14, 165, 233, 0.1);
+      border: 1px solid rgba(14, 165, 233, 0.3);
+      border-left: 4px solid #0284c7;
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0f172a;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #334155;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #475569;
+    }
+
+    /* ========================================================================= */
+    /* MODO PAPEL / VISTA PREVIA IMPRESIÓN DIRECTA EN PANTALLA                  */
+    /* ========================================================================= */
+    body.paper-mode {
+      background-color: #f8fafc !important;
+      color: #0f172a !important;
+    }
+    body.paper-mode header {
+      background-color: #ffffff !important;
+      border-bottom: 1px solid #e2e8f0 !important;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05) !important;
+    }
+    body.paper-mode header h1, 
+    body.paper-mode header span {
+      color: #0f172a !important;
+    }
+    body.paper-mode .hero-card {
+      background: #ffffff !important;
+      border: 2px solid #0284c7 !important;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05) !important;
+    }
+    body.paper-mode .hero-card h1 {
+      color: #0f172a !important;
+    }
+    body.paper-mode .hero-card h1 span {
+      background: none !important;
+      -webkit-text-fill-color: initial !important;
+      color: #0284c7 !important;
+    }
+    body.paper-mode .hero-card .text-slate-300,
+    body.paper-mode .hero-card .text-slate-400 {
+      color: #475569 !important;
+    }
+    body.paper-mode .hero-card strong {
+      color: #0f172a !important;
+    }
+    body.paper-mode .speech-bubble {
+      background: #ffffff !important;
+      border: 1px solid #cbd5e1 !important;
+      border-left: 4px solid #0284c7 !important;
+      color: #0f172a !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03) !important;
+    }
+    body.paper-mode .speech-bubble p,
+    body.paper-mode .speech-bubble span,
+    body.paper-mode .speech-bubble li,
+    body.paper-mode .speech-bubble div {
+      color: #1e293b !important;
+    }
+    body.paper-mode .speech-bubble strong {
+      color: #0f172a !important;
+    }
+    body.paper-mode .stage-note {
+      background: #fffbeb !important;
+      border: 1px solid #fef3c7 !important;
+      border-left: 4px solid #d97706 !important;
+      color: #78350f !important;
+    }
+    body.paper-mode .slide-badge {
+      background: #f5f3ff !important;
+      border: 1px solid #ddd6fe !important;
+      border-left: 4px solid #6366f1 !important;
+      color: #312e81 !important;
+    }
+    body.paper-mode .dynamic-badge {
+      background: #ecfdf5 !important;
+      border: 1px solid #a7f3d0 !important;
+      border-left: 4px solid #059669 !important;
+      color: #064e3b !important;
+    }
+    body.paper-mode .transition-card {
+      background: #f0f9ff !important;
+      border: 1px solid #bae6fd !important;
+      border-left: 4px solid #0284c7 !important;
+      color: #0c4a6e !important;
+    }
+    body.paper-mode section h2 {
+      color: #0f172a !important;
+    }
+    body.paper-mode section p {
+      color: #475569 !important;
+    }
+    body.paper-mode table {
+      background: #ffffff !important;
+      border-color: #cbd5e1 !important;
+    }
+    body.paper-mode table thead {
+      background: #0f172a !important;
+      color: #ffffff !important;
+    }
+    body.paper-mode table td {
+      color: #1e293b !important;
+      border-color: #e2e8f0 !important;
+    }
+
+    /* ========================================================================= */
+    /* REGLAS MAESTRAS DE IMPRESIÓN (@MEDIA PRINT)                               */
+    /* Formato A4 / Letter perfecto, sin desencuadres, con contraste total       */
+    /* ========================================================================= */
+    @page {
+      size: A4 portrait;
+      margin: 12mm 12mm 14mm 12mm;
+    }
+
+    @media print {
+      *, *::before, *::after {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+      }
+
+      html, body {
+        background: #ffffff !important;
+        background-color: #ffffff !important;
+        color: #0f172a !important;
+        font-size: 9.5pt !important;
+        line-height: 1.45 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+
+      .no-print, header, nav, #timerDisplay, button {
+        display: none !important;
+      }
+
+      main, #scriptContent {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+        space-y: 10pt !important;
+      }
+
+      /* Hero Header optimizado para papel */
+      .hero-card {
+        background: #ffffff !important;
+        border: 2px solid #0284c7 !important;
+        border-radius: 6pt !important;
+        padding: 12pt 16pt !important;
+        margin-bottom: 14pt !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+      }
+
+      .hero-card h1 {
+        font-size: 16pt !important;
+        color: #0f172a !important;
+        line-height: 1.25 !important;
+        margin-bottom: 6pt !important;
+      }
+
+      .hero-card h1 span {
+        background: none !important;
+        -webkit-text-fill-color: initial !important;
+        color: #0284c7 !important;
+        display: block !important;
+        font-size: 13pt !important;
+      }
+
+      .hero-card .blur-3xl {
+        display: none !important;
+      }
+
+      .hero-card .border-t {
+        border-top: 1px solid #cbd5e1 !important;
+        margin-top: 8pt !important;
+        padding-top: 6pt !important;
+        font-size: 8.5pt !important;
+        color: #334155 !important;
+      }
+
+      /* Badges del Hero en Print */
+      .hero-card [class*="bg-red-600"] {
+        background: #fef2f2 !important;
+        color: #b91c1c !important;
+        border: 1px solid #f87171 !important;
+        font-weight: 700 !important;
+      }
+
+      .hero-card [class*="bg-blue-600"] {
+        background: #eff6ff !important;
+        color: #1d4ed8 !important;
+        border: 1px solid #60a5fa !important;
+        font-weight: 700 !important;
+      }
+
+      .hero-card [class*="bg-slate-700"] {
+        background: #f1f5f9 !important;
+        color: #334155 !important;
+        border: 1px solid #cbd5e1 !important;
+      }
+
+      /* Estructura de Secciones */
+      section {
+        page-break-inside: auto;
+        break-inside: auto;
+        margin-bottom: 14pt !important;
+        display: block !important;
+      }
+
+      .section-header, 
+      section > div:first-child {
+        border-bottom: 2px solid #cbd5e1 !important;
+        padding-bottom: 4pt !important;
+        margin-bottom: 8pt !important;
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+      }
+
+      h1, h2, h3, h4, h5 {
+        color: #0f172a !important;
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+      }
+
+      h2 {
+        font-size: 12pt !important;
+        font-weight: 800 !important;
+        margin: 0 !important;
+        color: #0f172a !important;
+      }
+
+      /* Bloques de Voz / Parlamentos */
+      .speech-bubble {
+        background: #f8fafc !important;
+        border: 1px solid #cbd5e1 !important;
+        border-left: 4px solid #0284c7 !important;
+        border-radius: 6pt !important;
+        padding: 10pt 14pt !important;
+        margin-bottom: 10pt !important;
+        color: #0f172a !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+      }
+
+      .speech-bubble p, 
+      .speech-bubble div, 
+      .speech-bubble li, 
+      .speech-bubble span {
+        color: #1e293b !important;
+        font-size: 9.5pt !important;
+      }
+
+      .speech-bubble strong {
+        color: #0f172a !important;
+        font-weight: 700 !important;
+      }
+
+      .speech-bubble [class*="text-sky-400"] {
+        color: #0369a1 !important;
+        font-weight: 800 !important;
+      }
+
+      .speech-bubble [class*="text-red-400"] {
+        color: #b91c1c !important;
+        font-weight: 700 !important;
+      }
+
+      .speech-bubble [class*="text-emerald-300"],
+      .speech-bubble [class*="text-emerald-400"] {
+        color: #047857 !important;
+        font-weight: 700 !important;
+      }
+
+      .speech-bubble [class*="text-amber-300"] {
+        color: #92400e !important;
+      }
+
+      .speech-bubble [class*="border-sky-500"] {
+        border-left: 2px solid #0284c7 !important;
+        background: #f0f9ff !important;
+        padding: 4pt 8pt !important;
+        margin: 4pt 0 !important;
+        border-radius: 3pt !important;
+      }
+
+      .speech-bubble [class*="border-sky-500"] * {
+        color: #0369a1 !important;
+      }
+
+      /* Acotaciones Escénicas */
+      .stage-note {
+        background: #fffbeb !important;
+        border: 1px solid #fde68a !important;
+        border-left: 4px solid #d97706 !important;
+        border-radius: 6pt !important;
+        padding: 8pt 12pt !important;
+        margin-bottom: 8pt !important;
+        color: #78350f !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        font-size: 8.5pt !important;
+      }
+
+      .stage-note strong,
+      .stage-note [class*="text-amber-300"] {
+        color: #92400e !important;
+        font-weight: bold !important;
+      }
+
+      /* Diapositivas / Slide Badges */
+      .slide-badge {
+        background: #f5f3ff !important;
+        border: 1px solid #ddd6fe !important;
+        border-left: 4px solid #6366f1 !important;
+        border-radius: 6pt !important;
+        padding: 8pt 12pt !important;
+        margin-bottom: 8pt !important;
+        color: #312e81 !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+      }
+
+      .slide-badge div,
+      .slide-badge span {
+        color: #312e81 !important;
+      }
+
+      .slide-badge [class*="text-indigo-400"] {
+        color: #4f46e5 !important;
+        font-weight: bold !important;
+      }
+
+      .slide-badge [class*="text-white"] {
+        color: #1e1b4b !important;
+        font-weight: 700 !important;
+      }
+
+      /* Dinámicas Interactivas */
+      .dynamic-badge {
+        background: #ecfdf5 !important;
+        border: 1px solid #a7f3d0 !important;
+        border-left: 4px solid #059669 !important;
+        border-radius: 6pt !important;
+        padding: 10pt 14pt !important;
+        margin-bottom: 10pt !important;
+        color: #064e3b !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+      }
+
+      .dynamic-badge h4,
+      .dynamic-badge strong {
+        color: #064e3b !important;
+        font-weight: 800 !important;
+      }
+
+      .dynamic-badge p,
+      .dynamic-badge span {
+        color: #064e3b !important;
+      }
+
+      .dynamic-badge [class*="bg-emerald-950"] {
+        background: #d1fae5 !important;
+        color: #065f46 !important;
+        border: 1px solid #6ee7b7 !important;
+      }
+
+      /* Tarjetas de Transición */
+      .transition-card {
+        background: #f0f9ff !important;
+        border: 1px solid #bae6fd !important;
+        border-left: 4px solid #0284c7 !important;
+        border-radius: 6pt !important;
+        padding: 8pt 12pt !important;
+        margin-bottom: 10pt !important;
+        color: #0c4a6e !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        font-size: 8.5pt !important;
+      }
+
+      .transition-card strong {
+        color: #0369a1 !important;
+      }
+
+      /* Sub-tarjetas internas (Carlos vs Andrea, Miedos, Pilares) */
+      [class*="bg-slate-900"],
+      [class*="bg-slate-800"] {
+        background: #ffffff !important;
+        border: 1px solid #cbd5e1 !important;
+        color: #1e293b !important;
+      }
+
+      [class*="bg-red-950"] {
+        background: #fef2f2 !important;
+        border: 1px solid #fecaca !important;
+        color: #1e293b !important;
+      }
+
+      [class*="bg-emerald-950"] {
+        background: #f0fdf4 !important;
+        border: 1px solid #bbf7d0 !important;
+        color: #1e293b !important;
+      }
+
+      /* Citas textuales / serif-quote */
+      .serif-quote {
+        background: #f8fafc !important;
+        border-left: 4px solid #64748b !important;
+        color: #1e293b !important;
+        font-style: italic !important;
+        padding: 8pt 12pt !important;
+        margin: 6pt 0 !important;
+      }
+
+      /* Tabla Maestra de Resumen */
+      #resumen table {
+        width: 100% !important;
+        border-collapse: collapse !important;
+        font-size: 8pt !important;
+        margin-top: 8pt !important;
+      }
+
+      #resumen table thead tr {
+        background: #0f172a !important;
+      }
+
+      #resumen table th {
+        color: #ffffff !important;
+        padding: 5pt 7pt !important;
+        border: 1px solid #334155 !important;
+        font-size: 8pt !important;
+      }
+
+      #resumen table tbody tr {
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+      }
+
+      #resumen table tbody tr:nth-child(even) {
+        background: #f8fafc !important;
+      }
+
+      #resumen table td {
+        padding: 5pt 7pt !important;
+        border: 1px solid #cbd5e1 !important;
+        color: #1e293b !important;
+        font-size: 7.5pt !important;
+        line-height: 1.35 !important;
+      }
+
+      #resumen table td[class*="text-sky-400"] {
+        color: #0369a1 !important;
+        font-weight: 700 !important;
+      }
+
+      #resumen table td[class*="text-amber-400"],
+      #resumen table td[class*="text-amber-300"] {
+        color: #b45309 !important;
+        font-weight: 700 !important;
+      }
+
+      #resumen table td[class*="text-emerald-400"] {
+        color: #047857 !important;
+        font-weight: 700 !important;
+      }
+
+      #resumen table td[class*="text-purple-400"] {
+        color: #6d28d9 !important;
+        font-weight: 700 !important;
+      }
+
+      #resumen table td[class*="text-slate-400"] {
+        color: #475569 !important;
+      }
+    }
+  </style>
+</head>
+<body class="antialiased min-h-screen">
+
+  <!-- TOP BAR / HEADER -->
+  <header class="sticky top-0 z-50 bg-[#0f172a]/95 backdrop-blur border-b border-slate-800 shadow-xl no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-wrap items-center justify-between gap-4">
+      <div class="flex items-center space-x-3">
+        <div class="h-10 w-10 rounded-xl bg-gradient-to-tr from-red-600 via-blue-600 to-sky-400 flex items-center justify-center font-black text-white text-lg shadow-lg">
+          M
+        </div>
+        <div>
+          <h1 class="text-base font-bold text-white tracking-tight flex items-center gap-2">
+            Maia <span class="text-xs bg-red-600/30 text-red-400 border border-red-500/30 px-2 py-0.5 rounded-full uppercase tracking-wider font-semibold">RE/MAX Costa Rica 2026</span>
+          </h1>
+          <p class="text-xs text-slate-400">Guion Maestro de Ponencia General • 60 Minutos (Versión Optimizada)</p>
+        </div>
+      </div>
+
+      <!-- TIMER & CONTROLS -->
+      <div class="flex items-center gap-3">
+        <!-- Rehearsal Timer -->
+        <div class="flex items-center bg-slate-900 border border-slate-700/80 rounded-xl px-3 py-1.5 shadow-inner">
+          <span class="text-xs font-semibold text-slate-400 mr-2 uppercase tracking-wider">⏱ Ensayo:</span>
+          <span id="timerDisplay" class="font-mono text-sm font-bold text-sky-400 w-16 text-center">00:00</span>
+          <button id="timerToggleBtn" onclick="toggleTimer()" class="ml-2 p-1 text-xs bg-sky-600 hover:bg-sky-500 text-white rounded-md transition px-2">Play</button>
+          <button onclick="resetTimer()" class="ml-1 p-1 text-xs bg-slate-700 hover:bg-slate-600 text-slate-200 rounded-md transition px-1.5">↺</button>
+        </div>
+
+        <!-- Font Size Adjuster -->
+        <div class="hidden sm:flex items-center bg-slate-900 border border-slate-700/80 rounded-xl px-2 py-1">
+          <span class="text-xs text-slate-400 px-1">Texto:</span>
+          <button onclick="changeFontSize(-1)" class="px-2 py-0.5 text-xs text-slate-300 hover:bg-slate-800 rounded font-bold">A-</button>
+          <button onclick="changeFontSize(1)" class="px-2 py-0.5 text-xs text-slate-300 hover:bg-slate-800 rounded font-bold">A+</button>
+        </div>
+
+        <!-- Vista Papel / Lectura Preview -->
+        <button id="paperModeBtn" onclick="togglePaperMode()" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-xl text-xs font-medium border border-slate-700 flex items-center gap-1.5 transition shadow-sm" title="Alternar entre modo escenario oscuro y vista clara imprimible">
+          <span>📄</span> <span class="hidden md:inline">Vista Impresión</span>
+        </button>
+
+        <!-- Print / PDF -->
+        <button onclick="window.print()" class="px-3 py-1.5 bg-sky-600 hover:bg-sky-500 text-white rounded-xl text-xs font-semibold shadow-md flex items-center gap-1.5 transition" title="Imprimir guion o guardar como PDF (Cmd+P)">
+          <span>🖨️</span> <span>Imprimir / PDF</span>
+        </button>
+      </div>
+    </div>
+    
+    <!-- NAVIGATION TABS -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-800/60 overflow-x-auto flex space-x-2 py-2 text-xs">
+      <a href="#bloque-1" class="px-3 py-1.5 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-slate-300 hover:text-white whitespace-nowrap transition flex items-center gap-1">
+        <span class="w-2 h-2 rounded-full bg-red-500"></span> <strong>B1:</strong> Historia & Falacia (12m)
+      </a>
+      <a href="#bloque-2" class="px-3 py-1.5 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-slate-300 hover:text-white whitespace-nowrap transition flex items-center gap-1">
+        <span class="w-2 h-2 rounded-full bg-blue-500"></span> <strong>B2:</strong> MetLife en Trinchera (12m)
+      </a>
+      <a href="#bloque-3" class="px-3 py-1.5 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-slate-300 hover:text-white whitespace-nowrap transition flex items-center gap-1">
+        <span class="w-2 h-2 rounded-full bg-amber-500"></span> <strong>B3:</strong> ¿Qué Harías Sin Miedo? (14m)
+      </a>
+      <a href="#bloque-4" class="px-3 py-1.5 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-slate-300 hover:text-white whitespace-nowrap transition flex items-center gap-1">
+        <span class="w-2 h-2 rounded-full bg-emerald-500"></span> <strong>B4:</strong> Viktor Frankl & Mindfulness (10m)
+      </a>
+      <a href="#bloque-5" class="px-3 py-1.5 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-slate-300 hover:text-white whitespace-nowrap transition flex items-center gap-1">
+        <span class="w-2 h-2 rounded-full bg-purple-500"></span> <strong>B5:</strong> El Círculo del Zorro (7m)
+      </a>
+      <a href="#bloque-6" class="px-3 py-1.5 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-slate-300 hover:text-white whitespace-nowrap transition flex items-center gap-1">
+        <span class="w-2 h-2 rounded-full bg-rose-500"></span> <strong>B6:</strong> Cierre & Significado (5m)
+      </a>
+      <a href="#resumen" class="px-3 py-1.5 rounded-lg bg-sky-950/60 border border-sky-800/60 text-sky-300 hover:bg-sky-900/60 whitespace-nowrap transition">
+        📊 Tabla Resumen
+      </a>
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12" id="scriptContent">
+
+    <!-- HERO / TITLE CARD -->
+    <div class="hero-card relative overflow-hidden rounded-3xl bg-gradient-to-br from-slate-900 via-slate-800/90 to-blue-950 border border-slate-700/80 p-6 sm:p-10 shadow-2xl">
+      <div class="absolute -right-16 -top-16 w-64 h-64 bg-red-600/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -left-16 -bottom-16 w-64 h-64 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="relative z-10">
+        <div class="flex flex-wrap items-center gap-2 mb-4">
+          <span class="px-3 py-1 bg-red-600/20 text-red-400 border border-red-500/30 rounded-full text-xs font-bold tracking-wide uppercase">RE/MAX Costa Rica</span>
+          <span class="px-3 py-1 bg-blue-600/20 text-blue-400 border border-blue-500/30 rounded-full text-xs font-bold tracking-wide uppercase">Convención Nacional 2026</span>
+          <span class="px-3 py-1 bg-slate-700/50 text-slate-300 rounded-full text-xs font-medium">100 Asistentes (Agentes + Brokers + Staff)</span>
+        </div>
+
+        <h1 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight mb-4">
+          La Ventaja de la Actitud:<br/>
+          <span class="bg-gradient-to-r from-sky-400 via-blue-300 to-indigo-300 bg-clip-text text-transparent">
+            Psicología Positiva, Mindfulness y Alto Rendimiento en Real Estate
+          </span>
+        </h1>
+
+        <div class="flex flex-wrap items-center gap-y-2 gap-x-6 text-sm text-slate-300 border-t border-slate-700/60 pt-4 mt-6">
+          <div><strong class="text-white">Ponente:</strong> Maia (Máster en Psicología General & Coach de Producción +120 Agentes)</div>
+          <div><strong class="text-white">Duración:</strong> 60 minutos cronometrados</div>
+          <div><strong class="text-white">Estilo:</strong> Conexión humana, rigor científico, trinchera comercial y filosofía existencial</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LEGEND / HOW TO READ -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-3 text-xs bg-slate-900/60 border border-slate-800 rounded-2xl p-4 no-print">
+      <div class="flex items-center gap-2 text-sky-300">
+        <div class="w-3 h-3 rounded-full bg-sky-400"></div>
+        <span><strong>Voz de Maia:</strong> Texto principal</span>
+      </div>
+      <div class="flex items-center gap-2 text-amber-400">
+        <div class="w-3 h-3 rounded-full bg-amber-400"></div>
+        <span><strong>Acotación:</strong> Gestos y pausas</span>
+      </div>
+      <div class="flex items-center gap-2 text-indigo-300">
+        <div class="w-3 h-3 rounded-full bg-indigo-400"></div>
+        <span><strong>Diapositiva:</strong> Pantalla</span>
+      </div>
+      <div class="flex items-center gap-2 text-emerald-400">
+        <div class="w-3 h-3 rounded-full bg-emerald-400"></div>
+        <span><strong>Dinámica:</strong> Ejercicio en vivo</span>
+      </div>
+      <div class="flex items-center gap-2 text-sky-200">
+        <div class="w-3 h-3 rounded-full bg-sky-300"></div>
+        <span><strong>Transición:</strong> Puente narrativo</span>
+      </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- BLOQUE 1 -->
+    <!-- ========================================================================= -->
+    <section id="bloque-1" class="space-y-6 scroll-mt-28">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+        <div class="flex items-center gap-3">
+          <span class="w-8 h-8 rounded-xl bg-red-600/20 text-red-400 border border-red-500/30 flex items-center justify-center font-bold text-sm">01</span>
+          <div>
+            <h2 class="text-xl font-bold text-white">BLOQUE 1: El Giro de mi Vida y la Gran Falacia del Éxito</h2>
+            <p class="text-xs text-slate-400">Apertura, vulnerabilidad, historia de su abuela y el puente al Real Estate</p>
+          </div>
+        </div>
+        <span class="text-xs font-mono font-bold bg-slate-800 text-slate-300 px-3 py-1 rounded-full">00:00 - 12:00 (12 min)</span>
+      </div>
+
+      <!-- Slide Card -->
+      <div class="slide-badge rounded-2xl p-4 flex items-start gap-3 text-indigo-200">
+        <span class="text-xl">📽️</span>
+        <div>
+          <div class="text-xs font-bold uppercase tracking-wider text-indigo-400">Diapositivas 1 & 2</div>
+          <div class="text-sm font-semibold text-white mt-0.5">Slide 1: Logo Convención RE/MAX Costa Rica 2026 → Slide 2: Cita de John Milton</div>
+          <div class="text-xs italic text-indigo-300/90 mt-1 serif-quote">«La mente es su propia morada, y por sí misma puede hacer un cielo del infierno, o un infierno del cielo.»</div>
+        </div>
+      </div>
+
+      <!-- Stage Note -->
+      <div class="stage-note rounded-2xl p-4 text-amber-200 text-sm flex items-start gap-3">
+        <span class="text-lg">🎭</span>
+        <div>
+          <strong class="text-amber-300 font-semibold">Acotación Escénica:</strong>
+          Maia entra con paso firme y postura erguida. No comienza con saludos protocolares. Se planta en el centro del escenario, sostiene una mirada panorámica y cálida con la audiencia, y hace una pausa de 3 segundos antes de lanzar la pregunta inicial con tono vibrante.
+        </div>
+      </div>
+
+      <!-- Speech Content -->
+      <div class="speech-bubble rounded-2xl p-6 text-slate-100 text-base sm:text-lg leading-relaxed space-y-4">
+        <div class="text-xs font-bold uppercase tracking-wider text-sky-400 mb-2">[00:00 - 02:30] Apertura e Interrupción de Patrón</div>
+        
+        <p>
+          «Quiero que levanten la mano, con absoluta honestidad: ¿cuántos de los que están sentados en esta sala se han dicho alguna vez a sí mismos algo como esto:
+        </p>
+        <p class="pl-4 italic border-l-2 border-sky-500/50 text-sky-200 text-base">
+          “El día que logre captar esa propiedad de 2 millones de dólares en Guanacaste, Las Catalinas o Santa Ana... ese día voy a respirar tranquilo.”<br/>
+          “El día que entre al Executive Club, al 100% Club o al Platinum Club... ese día me voy a sentir realmente exitoso.”<br/>
+          “El día que cierre estas tres operaciones que tengo atascadas con los abogados y los bancos... ese día por fin voy a ser feliz.”
+        </p>
+
+        <div class="p-3 bg-slate-900/80 rounded-xl text-xs text-amber-300 border border-amber-500/20 italic">
+          (Espera 4 segundos con una sonrisa cómplice a que casi toda la sala levante la mano).
+        </div>
+
+        <p>
+          Miren a su alrededor. Prácticamente toda la sala tiene la mano levantada.
+        </p>
+        <p>
+          Y no los culpo. Son nuestros padres, que quieren lo mejor para nosotros y quieren que repliquemos un modelo que parece haberles funcionado a ellos. Nos enseñaron desde pequeños una fórmula que sonaba impecable y muy lógica:
+        </p>
+
+        <p class="text-center py-2">
+          <span class="text-red-400 font-bold bg-red-950/40 border border-red-500/30 px-4 py-1.5 rounded-full text-sm sm:text-base inline-block">
+            “Trabaja duro / Esfuérzate ➔ Alcanza el éxito ➔ Y solo cuando tengas éxito, serás feliz”
+          </span>
+        </p>
+
+        <p>
+          Sin embargo, la neurociencia y la psicología moderna han demostrado que esa fórmula es <strong>absolutamente falsa</strong>.
+        </p>
+
+        <p>
+          ¿Por qué es falsa? Porque cada vez que logras una meta en Real Estate —cada vez que cierras una venta, captas una exclusiva o ganas un premio—, tu cerebro simplemente corre la línea de llegada un kilómetro más lejos. Ahora quieres dos millones, luego cinco, luego diez. Si la felicidad está siempre condicionada al éxito futuro, tu mente jamás llega a ser feliz, porque la meta no para de moverse.
+        </p>
+
+        <p>
+          Pero la ciencia demuestra exactamente lo contrario: <strong>La felicidad no es el resultado del éxito; la felicidad es el motor previo que produce el éxito.</strong>
+        </p>
+
+        <p>
+          ¿Acaso no les ha pasado a todos aquí que los días en que salieron a trabajar con la mente despejada, con energía positiva y con ganas genuinas de servir, las llamadas fluyeron mejor, los clientes fueron más receptivos y destrabaron negociaciones que parecían imposibles? Tu actitud, tu claridad interior y tu capacidad de gestionar tu mente no son el premio final: son la mayor ventaja competitiva que tienes como profesional inmobiliario.»
+        </p>
+      </div>
+
+      <!-- Section 1.2: Story of Maia -->
+      <div class="stage-note rounded-2xl p-4 text-amber-200 text-sm flex items-start gap-3">
+        <span class="text-lg">🎭</span>
+        <div>
+          <strong class="text-amber-300 font-semibold">Acotación Escénica:</strong>
+          El tono baja un escalón. Se vuelve íntimo, confesional y pausado. Maia da dos pasos hacia adelante, acercándose físicamente a la primera fila. Contacto visual sostenido.
+        </div>
+      </div>
+
+      <div class="speech-bubble rounded-2xl p-6 text-slate-100 text-base sm:text-lg leading-relaxed space-y-4">
+        <div class="text-xs font-bold uppercase tracking-wider text-sky-400 mb-2">[02:30 - 07:30] La Historia Personal: De la Psicopatología al Florecimiento</div>
+
+        <p>
+          «Para que entiendan por qué estoy hoy aquí parada frente a ustedes en Costa Rica, habiendo cruzado el océano desde el Mediterráneo en España, tengo que abrirles una página muy íntima de mi propia vida.
+        </p>
+        <p>
+          Cuando me gradué del Máster en Psicología General, salí al mundo con toda la ilusión académica y con algo muy en claro: <strong>quería trabajar con adultos mayores</strong>. Me fascinaba ese público, y la razón principal era que durante mis estudios habíamos profundizado en un concepto apasionante: <strong>la generatividad</strong>.
+        </p>
+        <p>
+          La generatividad es esa tendencia y necesidad profunda que surge en el ser humano maduro de cuidar a las siguientes generaciones, de guiar, de dejar un legado y de construir algo que perdure más allá de uno mismo, logrando una trascendencia real. Me hacía particular ilusión conectar con personas que estaban en ese momento vital. Y en ese sector encontré una necesidad urgente y hermosa: <strong>la estimulación cognitiva</strong> frente al deterioro habitual de las funciones cognitivas en la tercera edad. La estimulación cognitiva consiste en ejercitar, potenciar y estabilizar la memoria, la atención y el lenguaje mediante intervenciones no farmacológicas. Ver a un paciente reconectar con un recuerdo o con su familia era profundamente gratificante.
+        </p>
+        <p>
+          Pero había una realidad silenciosa que empezó a dolerme mucho.  
+          Convivir día tras día inmersa emocionalmente en la psicopatología, en el deterioro irreversible, en la depresión, en la pérdida constante de facultades, es desgastante. Y entendí por qué me pesaba tanto: la psicología tradicional durante décadas estuvo estructurada bajo esa misma mirada negativa, dedicando <strong>17 estudios a la depresión y la ansiedad por cada 1 solo estudio dedicado a la felicidad o a las fortalezas humanas</strong>. Estábamos obsesionados con llevar a la persona de -8 a 0: reparar lo roto para dejarlo apenas en el punto neutro.
+        </p>
+        <p>
+          Y de repente, la vida me puso la prueba más dolorosa en el comedor de mi propia casa.  
+          Eso que yo veía todos los días en la clínica con mis pacientes... empecé a verlo en los ojos de mi abuela.  
+          Ver el deterioro cognitivo en alguien que amas con toda tu alma, ver cómo la persona que te cuidó y te sostuvo empieza a apagarse poco a poco, te rompe por dentro. Y cuando mi abuela falleció, me quedé sola frente a un espejo con un vacío enorme y una pregunta que retumbaba en mi cabeza:  
+          <em class="text-amber-300">“¿A qué quiero dedicar el resto de mi vida y de mi energía?”</em>
+        </p>
+        <p>
+          Y en ese instante tomé una decisión que lo cambió todo.  
+          Por ella, y por mí: tomé la decisión consciente de alejarme de la psicopatología, de la depresión y del síntoma, y <strong>acercarme a la motivación, al crecimiento, al potencial humano, para dedicarme de lleno a la psicología positiva</strong>.  
+          Decidí que no quería pasarme la vida tratando de llevar a las personas de -8 a 0; quería entrenar, acompañar e inspirar a seres humanos a <strong>pasar de 0 a +10</strong>. Llevarlos al florecimiento, a descubrir de qué son capaces cuando aprenden a liderar su mente, sus hábitos, su motivación y su propósito.
+        </p>
+        <p>
+          Y al mirar hacia atrás con perspectiva, me di cuenta de algo revelador: en realidad ya lo tenía clarísimo desde el principio. Lo que me había obnubilado y enamorado de la psicología desde aquella primera clase universitaria sobre la generatividad era justamente el desarrollo personal, la trascendencia y el potencial humano: es decir, la psicología positiva. Solo que tal vez no lo había notado y me había distraído yendo por el camino del dolor y la patología.
+        </p>
+        <p>
+          Me certifiqué como instructora de mindfulness, me formé como coach de vida y de negocios... y la vida me llevó a encontrar un terreno de juego apasionante: el mundo del Real Estate.»
+        </p>
+      </div>
+
+      <!-- Section 1.3: Real Estate Bridge -->
+      <div class="speech-bubble rounded-2xl p-6 text-slate-100 text-base sm:text-lg leading-relaxed space-y-4">
+        <div class="text-xs font-bold uppercase tracking-wider text-sky-400 mb-2">[07:30 - 12:00] El Real Estate como el Mayor Gimnasio Emocional del Mundo</div>
+
+        <p>
+          «Hoy en día, como Coach de Producción de más de 120 agentes de RE/MAX en más de 5 oficinas de la Costa Blanca, me siento a diario con personas como ustedes a revisar qué es lo que genuinamente quieren para su vida, cuál es su propósito, cuáles son sus hábitos no negociables y qué tan dispuestos están a hacer lo que sea necesario para alcanzar sus metas. Medimos sus KPIs, diseñamos su Business Plan y lo traducimos en acciones concretas en el día a día.
+        </p>
+        <p>
+          Y les puedo asegurar una cosa:  
+          <strong>No existe profesión en el planeta que ponga más a prueba la psicología de una persona que el Real Estate.</strong>
+        </p>
+        <p>
+          En un mismo día, a las 9:00 a.m. te sientes invencible porque te aceptaron una oferta; a las 11:30 a.m. se te cae la operación más grande del mes porque el banco no aprobó el préstamo; a las 2:00 p.m. un propietario te llama furioso para quitarte la exclusiva; y a las 4:00 p.m. tienes que plantarte con tu mejor presencia frente a una familia ilusionada, transmitiéndoles paz, seguridad y convicción absoluta.
+        </p>
+        <p>
+          A lo que voy con todo esto, y es muy importante, es preguntarnos: <strong>¿qué determina quién se consolida como Top Producer y quién abandona el negocio?</strong>  
+          Y ya les adelanto que no es el mercado, que no son las tasas de interés y no es la competencia.  
+          <strong>Es tu psicología. Es la calidad de tu diálogo interno. Es la actitud que eliges tener ante lo que te sucede.</strong>»
+        </p>
+      </div>
+
+      <!-- TRANSITION CARD 1 -->
+      <div class="transition-card rounded-2xl p-4 text-sky-200 text-sm flex items-center gap-3 shadow-md">
+        <span class="text-xl">🔄</span>
+        <div>
+          <strong class="text-white uppercase text-xs tracking-wider block font-bold">Transición Fluida hacia el Bloque 2:</strong>
+          «Ahora bien: decir que la actitud lo es todo suena muy bonito en un póster de motivación. Pero aquí no venimos a hablar de frases hechas. Venimos a hablar de ciencia y de negocios. ¿Qué pasa realmente dentro de tu cerebro cuando sales a trabajar con una actitud positiva vs. estresada? ¿Y cómo se traduce eso en dólares y comisiones en tu cuenta bancaria? Vayamos a ver qué descubrió la ciencia cuando puso a prueba a miles de vendedores en la vida real...»
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- BLOQUE 2 -->
+    <!-- ========================================================================= -->
+    <section id="bloque-2" class="space-y-6 scroll-mt-28">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+        <div class="flex items-center gap-3">
+          <span class="w-8 h-8 rounded-xl bg-blue-600/20 text-blue-400 border border-blue-500/30 flex items-center justify-center font-bold text-sm">02</span>
+          <div>
+            <h2 class="text-xl font-bold text-white">BLOQUE 2: La Ventaja de la Felicidad & MetLife en la Trinchera</h2>
+            <p class="text-xs text-slate-400">Neurobiología, Shawn Achor, MetLife llevado a la realidad de llamadas (Carlos vs Andrea) y Efecto Tetris</p>
+          </div>
+        </div>
+        <span class="text-xs font-mono font-bold bg-slate-800 text-slate-300 px-3 py-1 rounded-full">12:00 - 24:00 (12 min)</span>
+      </div>
+
+      <!-- Slide Card -->
+      <div class="slide-badge rounded-2xl p-4 flex items-start gap-3 text-indigo-200">
+        <span class="text-xl">📽️</span>
+        <div>
+          <div class="text-xs font-bold uppercase tracking-wider text-indigo-400">Diapositivas 5, 6, 7 & 8</div>
+          <div class="text-sm font-semibold text-white mt-0.5">Slide 5: Neurobiología de la Venta (Shawn Achor) → Slide 6: Estudio MetLife → Slide 7: Carlos vs Andrea → Slide 8: Efecto Tetris</div>
+        </div>
+      </div>
+
+      <!-- Speech Content -->
+      <div class="speech-bubble rounded-2xl p-6 text-slate-100 text-base sm:text-lg leading-relaxed space-y-4">
+        <div class="text-xs font-bold uppercase tracking-wider text-sky-400 mb-2">[12:00 - 16:00] La Neurobiología de la Venta: Shawn Achor y el Cerebro Abierto</div>
+
+        <p>
+          «Para entender esto con rigor científico y llevarlo a resultados prácticos en sus cuentas bancarias, les recomiendo profundamente leer <em>La ventaja de la felicidad</em> de Shawn Achor, investigador de Harvard. Achor descubrió algo fundamental: cuando el cerebro humano opera desde un estado emocional positivo —gratitud, calma, entusiasmo, curiosidad—, el sistema nervioso libera neurotransmisores clave: <strong>dopamina y serotonina</strong>.
+        </p>
+        <p>
+          La dopamina no solo te hace sentir bien; la dopamina es el interruptor biológico del cerebro: <strong>enciende todos los centros de aprendizaje y procesamiento cognitivo</strong>.  
+          Bajo un estado positivo:
+        </p>
+        <ul class="list-disc pl-6 space-y-2 text-slate-200 text-base">
+          <li><strong>Tu campo de visión periférico y mental se expande</strong> (la teoría <em>Broaden-and-Build</em> de la Dra. Barbara Fredrickson). A diferencia de cuando estamos estresados —donde nos ofuscamos con una sola cosa, nos cerramos, nadie nos puede sacar de ahí o empezamos a catastrofizar hechos que realmente no existen e imaginar consecuencias hipotéticas catastróficas—, el cerebro positivo ve alternativas y posibilidades donde otros solo ven muros.</li>
+          <li><strong>Tu creatividad para resolver objeciones difíciles de clientes aumenta más de un 300%</strong>: <strong class="text-emerald-400">¡esto se multiplica por cuatro!</strong></li>
+          <li><strong>Tu capacidad de negociación y rapidez mental aumentan un <strong class="text-emerald-400">31%</strong>.</strong></li>
+        </ul>
+        <p>
+          Piénsenlo en una llamada real: un cliente dice <em>“El precio me parece alto”</em>, y el agente estresado —al no tener esta visión expandida de la que hablamos— se bloquea, se pone a la defensiva o baja la comisión de inmediato porque su mente entra en visión de túnel y pánico. En cambio, el agente con un cerebro positivo y sereno escucha la misma objeción y ve una puerta abierta, indaga las necesidades reales y encuentra una solución financiera creativa para cerrar la operación.»
+        </p>
+      </div>
+
+      <!-- MetLife Brought to Earth: Carlos vs Andrea -->
+      <div class="speech-bubble rounded-2xl p-6 text-slate-100 text-base sm:text-lg leading-relaxed space-y-4">
+        <div class="text-xs font-bold uppercase tracking-wider text-sky-400 mb-2">[16:00 - 20:30] MetLife Puesto en Tierra: La Anatomía de un Martes a las 10:00 AM</div>
+
+        <p>
+          «Llevemos esto a la tierra, a la trinchera donde ustedes y yo vivimos todos los días.  
+          A finales de los 80, Martin Seligman hizo el estudio más revelador de la historia de las ventas con la aseguradora <strong>MetLife</strong>.  
+          MetLife gastaba millones capacitando agentes, pero el 50% renunciaba el primer año destrozado por el rechazo de los clientes.
+        </p>
+        <p>
+          Seligman evaluó a 15.000 vendedores midiendo su <strong>estilo explicativo</strong>: la manera exacta en que su mente interpretaba el "NO".  
+          ¿Qué demostró el estudio?
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 my-2 text-xs">
+          <div class="bg-slate-900/90 border border-slate-700 p-3 rounded-xl">
+            <span class="text-sky-400 font-bold text-sm block">+37% Año 1</span>
+            Los optimistas superaron en ventas el primer año a los pesimistas.
+          </div>
+          <div class="bg-slate-900/90 border border-slate-700 p-3 rounded-xl">
+            <span class="text-emerald-400 font-bold text-sm block">+88% Año 2</span>
+            La brecha se disparó al acumularse la resiliencia psicológica.
+          </div>
+          <div class="bg-slate-900/90 border border-slate-700 p-3 rounded-xl">
+            <span class="text-amber-400 font-bold text-sm block">+57% Brigada Especial</span>
+            Agentes reprobados en técnica pero altamente optimistas superaron a los demás.
+          </div>
+        </div>
+
+        <p class="font-semibold text-sky-300 mt-3">
+          Ahora, ¿cómo se ve este estudio en un martes cualquiera en una oficina de RE/MAX en Costa Rica?
+        </p>
+        <p>
+          Imaginen a dos agentes, <strong>Carlos y Andrea</strong>. Ambos se sientan a las 9:00 a.m. a hacer prospección telefónica:
+        </p>
+
+        <!-- Carlos vs Andrea Cards -->
+        <div class="space-y-3 my-3">
+          <div class="bg-red-950/30 border border-red-500/30 rounded-xl p-4 text-sm text-slate-200">
+            <strong class="text-red-400 block font-bold text-base mb-1">🔴 Carlos (Estilo Pesimista):</strong>
+            <p>• <em>Llamada 1:</em> Un propietario le contesta golpeado: <em>“No me interesan inmobiliarias, no me llamen más.”</em><br/>
+            ¿Qué se dice Carlos? <em>“La gente hoy está insoportable. En esta zona nadie quiere exclusivas.”</em><br/>
+            • <em>Llamada 3:</em> Le dicen que ya tienen la propiedad con tres agencias.<br/>
+            ¿Qué se dice Carlos? <em>“Ya ven, llegué tarde. El mercado está copado.”</em><br/>
+            • A la quinta llamada, Carlos cuelga, se levanta, se sirve un café, abre Instagram, mira si llovió en Jacó, se queja con el compañero... y a las 11:00 a.m. <strong>su día de prospección terminó</strong>. Hizo 5 llamadas mediocres y se quemó.</p>
+          </div>
+
+          <div class="bg-emerald-950/30 border border-emerald-500/30 rounded-xl p-4 text-sm text-slate-200">
+            <strong class="text-emerald-400 block font-bold text-base mb-1">🟢 Andrea (La Ventaja de la Felicidad):</strong>
+            <p>• Hace la misma <em>Llamada 1</em> y recibe el mismo portazo telefónico.<br/>
+            ¿Qué se dice Andrea? <em>“Este señor debe estar teniendo una mañana complicada. No tiene nada que ver conmigo. Mi trabajo es encontrar al que sí necesita mi ayuda hoy.”</em><br/>
+            • <em>Llamada 3:</em> Le dicen que ya tienen 3 agencias.<br/>
+            ¿Qué se dice Andrea? <em>“Excelente señal: el dueño está motivado para vender. Voy a hacerle seguimiento profesional en dos semanas cuando esas tres agencias no le hayan llevado ni una sola visita.”</em><br/>
+            • Andrea sabe que estadísticamente necesita 15 "NO" para llegar a 1 captación en exclusiva. Cada "NO" no es un fracaso: <strong>es una moneda que entra a su alcancía acercándola al siguiente "SÍ"</strong>. Andrea hace 25 llamadas con energía impecable.</p>
+          </div>
+        </div>
+
+        <p class="text-amber-300 font-semibold italic text-center py-2 border-y border-amber-500/20">
+          «¿Cuál es la diferencia entre Carlos y Andrea? No es el teléfono ni el mercado. Es la historia que cada uno se cuenta en los 5 segundos posteriores al rechazo.»
+        </p>
+      </div>
+
+      <!-- Dynamic 1: Tetris Effect -->
+      <div class="dynamic-badge rounded-2xl p-5 border border-emerald-500/40 text-emerald-200 space-y-3">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-400 flex items-center gap-1.5">
+            <span>✨</span> DINÁMICA INTERACTIVA #1 (Min 20:30 - 24:00)
+          </span>
+          <span class="text-xs bg-emerald-950 px-2 py-0.5 rounded text-emerald-300 font-mono">Participación de la Sala</span>
+        </div>
+        <h4 class="text-base font-bold text-white">El Filtro del Color y el Efecto Tetris Inmobiliario</h4>
+        
+        <div class="text-sm space-y-2 text-slate-200">
+          <p><strong>MAIA:</strong> «Hagamos una prueba rápida en este salón. Miren a su alrededor durante 5 segundos y busquen mentalmente <strong>todo lo que sea de color rojo</strong>. Cuenten los objetos rojos.<br/>
+          <em>1... 2... 3... 4... 5... ¡Cierren los ojos! Todos con los ojos cerrados. Nadie haga trampa.</em>»</p>
+          
+          <p class="text-amber-300 italic text-xs">(Con los ojos cerrados de la sala, Maia proyecta la voz):</p>
+          
+          <p><strong>MAIA:</strong> «Ahora, sin abrir los ojos... díganme: <strong>¿cuántas cosas de color verde vieron?</strong>»</p>
+          
+          <p class="text-amber-300 italic text-xs">(Risas en toda la sala. Maia les pide abrir los ojos).</p>
+          
+          <p><strong>MAIA:</strong> «¿Por qué nadie vio el verde? Porque le dieron una orden estricta a su cerebro: <em>“Busca rojo”</em>. Y mientras su cerebro buscaba rojo, su sistema neurológico borró el verde, el azul y el amarillo.<br/>
+          Esto es <strong>El Efecto Tetris Cognitivo</strong> de Shawn Achor. Si sales a la calle programado para buscar trabas, propietarios difíciles y quejas, tu mente borrará las oportunidades millonarias que tienes delante. Tu cerebro solo encuentra aquello que fue entrenado para buscar.»</p>
+        </div>
+      </div>
+
+      <!-- TRANSITION CARD 2 -->
+      <div class="transition-card rounded-2xl p-4 text-sky-200 text-sm flex items-center gap-3 shadow-md">
+        <span class="text-xl">🔄</span>
+        <div>
+          <strong class="text-white uppercase text-xs tracking-wider block font-bold">Transición Fluida hacia el Bloque 3:</strong>
+          «Y si nuestro cerebro es como ese escáner que solo encuentra lo que le ordenamos buscar... la pregunta decisiva es: ¿quién y cómo evalúa las cosas que nos pasan cada día? Epicteto nos enseñó que no sufrimos por los hechos, sino por cómo los interpretamos. Para entender la trampa de nuestra mente sin rodeos teóricos, hagamos un experimento mental que lo cambia todo...»
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- BLOQUE 3 -->
+    <!-- ========================================================================= -->
+    <section id="bloque-3" class="space-y-6 scroll-mt-28">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+        <div class="flex items-center gap-3">
+          <span class="w-8 h-8 rounded-xl bg-amber-600/20 text-amber-400 border border-amber-500/30 flex items-center justify-center font-bold text-sm">03</span>
+          <div>
+            <h2 class="text-xl font-bold text-white">BLOQUE 3: El Experimento del Banco, Escenarios Contrafactuales y ¿Qué Harías Sin Miedo?</h2>
+            <p class="text-xs text-slate-400">Dinámica interactiva en vivo, sesgos de interpretación y profundización en los 4 miedos reales del Real Estate</p>
+          </div>
+        </div>
+        <span class="text-xs font-mono font-bold bg-slate-800 text-slate-300 px-3 py-1 rounded-full">24:00 - 38:00 (14 min)</span>
+      </div>
+
+      <!-- Slide Card -->
+      <div class="slide-badge rounded-2xl p-4 flex items-start gap-3 text-indigo-200">
+        <span class="text-xl">📽️</span>
+        <div>
+          <div class="text-xs font-bold uppercase tracking-wider text-indigo-400">Diapositivas 9, 10 & 11</div>
+          <div class="text-sm font-semibold text-white mt-0.5">Slide 9: Epicteto y la Interpretación → Slide 10: Dinámica #2: El Experimento del Banco & Escenario Contrafactual → Slide 11: ¿Qué Harías Hoy si No Tuvieses Miedo?</div>
+        </div>
+      </div>
+
+      <!-- Dynamic 2: Bank Robber Counterfactual Experiment -->
+      <div class="dynamic-badge rounded-2xl p-5 border border-amber-500/40 text-amber-200 space-y-3">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold uppercase tracking-wider text-amber-400 flex items-center gap-1.5">
+            <span>✨</span> DINÁMICA INTERACTIVA #2 (Min 24:00 - 29:00)
+          </span>
+          <span class="text-xs bg-amber-950 px-2 py-0.5 rounded text-amber-300 font-mono">Participación de la Sala</span>
+        </div>
+        <h4 class="text-base font-bold text-white">El Experimento del Banco y los Escenarios Contrafactuales</h4>
+
+        <div class="text-sm space-y-3 text-slate-200">
+          <p><strong>MAIA:</strong> «Hace dos mil años, el filósofo estoico Epicteto nos regaló una máxima que es el cimiento de toda la psicología moderna: <em>“A los seres humanos no los perturban las cosas que pasan, sino las opiniones y juicios que hacen sobre las cosas que pasan.”</em></p>
+          
+          <p>Para ver cómo funciona esto en tiempo real en nuestra mente sin enredarnos con teorías complejas, quiero que hagamos un experimento mental en vivo que propone Shawn Achor en <em>La ventaja de la felicidad</em>.»</p>
+
+          <div class="p-4 bg-slate-900/90 border-l-4 border-amber-400 rounded-xl space-y-2">
+            <strong class="text-amber-300 block text-sm">El Escenario Hipotético:</strong>
+            <p class="italic text-slate-200">«Imaginen que es un miércoles por la mañana. Vas a una sucursal bancaria a hacer un trámite. En el banco hay unas 50 personas. De repente, entra un atracador armado, se pone nervioso, saca su arma y se le escapa un solo disparo fortuito. La única bala de todo el atraco sale volando y te impacta directamente en el brazo.»</p>
+          </div>
+
+          <p><strong>MAIA:</strong> «Ahora, con absoluta honestidad, quiero que levanten la mano:</p>
+          <ul class="list-disc pl-6 space-y-1">
+            <li>¿Quiénes de ustedes consideran que este hecho es de <strong class="text-red-400">MUY MALA SUERTE</strong>? <em class="text-xs text-amber-300">(Maia observa las manos levantadas)</em>.</li>
+            <li>Y ahora, ¿quiénes consideran que este hecho es de <strong class="text-emerald-400">MUY BUENA SUERTE</strong>? <em class="text-xs text-amber-300">(Maia observa las manos levantadas)</em>.</li>
+          </ul>
+
+          <p><strong>MAIA:</strong> «Miren lo que acaba de suceder en esta sala. El hecho objetivo es exactamente el mismo para todos: <em>un disparo en el brazo</em>. El hecho físico es neutro. ¿Por qué una parte de la sala lo ve como una tragedia desafortunada y otra parte como un golpe de inmensa suerte?»</p>
+
+          <p>«La neurociencia lo explica a través de un concepto fascinante: <strong>el escenario contrafactual</strong>. Un escenario contrafactual es una realidad alternativa hipotética que nuestro cerebro inventa para evaluar lo que acaba de suceder:</p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 my-2 text-xs">
+            <div class="bg-red-950/40 border border-red-500/30 p-3.5 rounded-xl">
+              <strong class="text-red-400 text-sm block mb-1">🔴 Quienes dijeron "Mala Suerte":</strong>
+              Su cerebro inventó en automático un <em>contrafactual positivo</em>: <em>“¿Por qué a mí? Si hubiera ido 10 minutos más tarde, no me habrían disparado.”</em> Al compararlo con ese escenario hipotético perfecto, se sienten víctimas desafortunadas y se llenan de resentimiento y queja.
+            </div>
+            <div class="bg-emerald-950/40 border border-emerald-500/30 p-3.5 rounded-xl">
+              <strong class="text-emerald-400 text-sm block mb-1">🟢 Quienes dijeron "Buena Suerte":</strong>
+              Su cerebro inventó de inmediato un <em>contrafactual negativo</em>: <em>“¡Qué bendición! Me dio en el brazo. Pudo haberme dado en el corazón o en la cabeza y podría estar muerto.”</em> Al compararlo con la muerte, sienten alivio, gratitud y fuerza.
+            </div>
+          </div>
+
+          <p>«¿Se dan cuenta de la potencia de esto? <strong>El hecho no tiene carga emocional. La emoción, el sufrimiento o la fuerza la crea el escenario contrafactual que tu propia mente inventa.</strong></p>
+
+          <p>En el Real Estate pasa exactamente igual todos los días. Se te cae una operación a 24 horas de la firma:<br/>
+          • El agente que crea un contrafactual tóxico se dice: <em>“Mi mes está arruinado, nadie en este país tiene palabra, soy un fracaso”</em>, se paraliza y pasa cuatro días sin prospectar.<br/>
+          • El agente consciente se dice: <em>“Menos mal se cayó antes de escriturar y no después con demandas legales. Esto me enseña a calificar mejor y me libera tiempo para captar una propiedad aún mejor”</em>, y a los quince minutos está prospectando con serenidad.»</p>
+        </div>
+      </div>
+
+      <!-- Deep Dive: What would you do if you were not afraid? -->
+      <div class="speech-bubble rounded-2xl p-6 text-slate-100 text-base sm:text-lg leading-relaxed space-y-4">
+        <div class="text-xs font-bold uppercase tracking-wider text-sky-400 mb-2">[29:00 - 38:00] ¿Qué Harías Hoy en tu Negocio si No Tuvieses Miedo?</div>
+
+        <p>
+          «Y cuando comprendemos que nuestra propia mente es la que inventa los escenarios que nos paralizan o nos impulsan, surge la pregunta más importante y transformadora para tu carrera:
+        </p>
+
+        <p class="text-xl sm:text-2xl font-black text-amber-300 block my-3 text-center bg-slate-900/90 py-3 rounded-2xl border border-amber-500/40">
+          “¿Qué harías hoy en tu negocio si no tuvieses miedo?”
+        </p>
+
+        <p>
+          El miedo es la emoción más primitiva del ser humano. En la prehistoria nos protegía de ser devorados por depredadores; hoy, en el Real Estate, el miedo no te salva la vida: <strong>el miedo te roba tu libertad financiera, tu crecimiento profesional y la vida que viniste a construir</strong>.
+        </p>
+
+        <p>
+          Tomemos consciencia profunda de los <strong>4 grandes miedos reales</strong> que frenan al asesor inmobiliario todos los días:
+        </p>
+
+        <div class="space-y-3 my-3">
+          <div class="bg-slate-900/80 border-l-4 border-amber-400 p-4 rounded-xl text-sm">
+            <strong class="text-amber-300 text-base block mb-1">1. El miedo al qué dirán (a que tu círculo cálido te vea como 'pesado'):</strong>
+            ¿Cuántos agentes no le escriben a sus amigos de toda la vida, a sus familiares, a sus excompañeros de universidad o a sus vecinos para decirles con orgullo que son agentes RE/MAX porque temen que piensen: <em>“Uy, ya me viene a vender algo”</em>?<br/>
+            Por miedo al qué dirán, dejas a las personas que más quieres en manos de intermediarios informales que no los van a cuidar. Si tú trabajas con ética, transparencia y profesionalismo, ofrecer tu asesoría no es molestar: <strong>es un acto de cuidado y protección para tu entorno</strong>.
+          </div>
+
+          <div class="bg-slate-900/80 border-l-4 border-sky-400 p-4 rounded-xl text-sm">
+            <strong class="text-sky-300 text-base block mb-1">2. El miedo a las grandes ligas (al cliente de alto patrimonio):</strong>
+            ¿Cuántos agentes ven un desarrollo de lujo de 3 o 5 millones de dólares en Papagayo, Las Catalinas o Santa Ana y no van a tocar la puerta porque por dentro se dicen: <em>“Ese inversionista sabe más de números que yo, tiene más dinero, me va a intimidar”</em>?<br/>
+            Ese inversionista tiene el capital, pero no tiene tu conocimiento del mercado local ni tu tiempo para filtrar y negociar. El miedo te hace pequeño antes de presentarte.
+          </div>
+
+          <div class="bg-slate-900/80 border-l-4 border-rose-400 p-4 rounded-xl text-sm">
+            <strong class="text-rose-300 text-base block mb-1">3. El miedo a defender tus honorarios (tus comisiones):</strong>
+            ¿Cuántas veces un propietario te dice en el minuto dos de la reunión: <em>“Te doy la propiedad, pero solo te pago el 3% o el 4%”</em>, y por miedo a perder la captación aceptas de inmediato?<br/>
+            Cuando bajas tus honorarios por miedo, le estás enviando un mensaje devastador al cliente: <i>“Mis servicios valen poco, y si no sé defender mi propio trabajo, tampoco sabré defender el precio de tu casa ante una oferta agresiva.”</i>
+          </div>
+
+          <div class="bg-slate-900/80 border-l-4 border-purple-400 p-4 rounded-xl text-sm">
+            <strong class="text-purple-300 text-base block mb-1">4. El miedo a la incomodidad de la prospección real (la procrastinación elegante):</strong>
+            Confundimos estar ocupados con ser productivos. Hay agentes que pasan 6 horas al día cambiando tipografías en Canva, limpiando el escritorio o acomodando carpetas por colores.<br/>
+            Eso en psicología se llama <strong>procrastinación elegante</strong>: te mantienes ocupado en tareas cómodas y seguras para evitar la única tarea que te da miedo: levantar el teléfono, marcar y hablar con desconocidos.
+          </div>
+        </div>
+
+        <p class="text-slate-100">
+          La valentía no es la ausencia de miedo. La valentía es sentir el nudo en el estómago, agarrar el teléfono y marcar de todas formas.  
+          <strong>El 90% de las cosas catastróficas que tu mente teme jamás llegan a ocurrir.</strong> Cuando tomas consciencia de tus miedos y de los escenarios contrafactuales que inventas, dejas de ser una víctima del mercado y te conviertes en el protagonista absoluto de tus resultados.»
+        </p>
+      </div>
+
+      <!-- TRANSITION CARD 3 -->
+      <div class="transition-card rounded-2xl p-4 text-sky-200 text-sm flex items-center gap-3 shadow-md">
+        <span class="text-xl">🔄</span>
+        <div>
+          <strong class="text-white uppercase text-xs tracking-wider block font-bold">Transición Fluida hacia el Bloque 4:</strong>
+          «Cuando aprendes a desarmar esos miedos y tomas el timón de tu diálogo interno, descubres algo aún más profundo: Que más allá de las metas de ventas y del dinero, hay un espacio dentro de ti que ninguna crisis, ningún mercado difícil y ningún cliente agresivo te puede quitar. Y aquí es donde la psicología moderna se arrodilla ante uno de los gigantes más luminosos del espíritu humano: el doctor Viktor Frankl...»
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- BLOQUE 4 -->
+    <!-- ========================================================================= -->
+    <section id="bloque-4" class="space-y-6 scroll-mt-28">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+        <div class="flex items-center gap-3">
+          <span class="w-8 h-8 rounded-xl bg-emerald-600/20 text-emerald-400 border border-emerald-500/30 flex items-center justify-center font-bold text-sm">04</span>
+          <div>
+            <h2 class="text-xl font-bold text-white">BLOQUE 4: Viktor Frankl, el Sentido, la Montaña Rusa Inmobiliaria y la Filosofía FISH!</h2>
+            <p class="text-xs text-slate-400">La última libertad humana, Optimismo Trágico, propósito ante el ciclo de 3 meses, espacio sagrado y FISH!</p>
+          </div>
+        </div>
+        <span class="text-xs font-mono font-bold bg-slate-800 text-slate-300 px-3 py-1 rounded-full">38:00 - 48:00 (10 min)</span>
+      </div>
+
+      <!-- Slide Card -->
+      <div class="slide-badge rounded-2xl p-4 flex items-start gap-3 text-indigo-200">
+        <span class="text-xl">📽️</span>
+        <div>
+          <div class="text-xs font-bold uppercase tracking-wider text-indigo-400">Diapositivas 12 & 13</div>
+          <div class="text-sm font-semibold text-white mt-0.5">Slide 12: Viktor Frankl, Propósito & La Realidad Inmobiliaria (Montaña Rusa y Ciclo de 3 Meses) → Slide 13: El Espacio Sagrado (Mindfulness) & Los 4 Pilares de FISH!</div>
+        </div>
+      </div>
+
+      <!-- Speech Content: Frankl Deep Dive -->
+      <div class="speech-bubble rounded-2xl p-6 text-slate-100 text-base sm:text-lg leading-relaxed space-y-4">
+        <div class="text-xs font-bold uppercase tracking-wider text-sky-400 mb-2">[38:00 - 44:00] Viktor Frankl, el Sentido y la Realidad Inmobiliaria</div>
+
+        <p>
+          «¿Conocen a <strong>Viktor Frankl</strong>?<br/>
+          Viktor Frankl fue un eminente neurólogo y psiquiatra austríaco que vivió una de las experiencias más extremas de la historia de la humanidad: sobrevivió a cuatro campos de concentración nazis, entre ellos Auschwitz y Dachau.
+        </p>
+        <p>
+          En medio de un escenario de deshumanización y dolor absoluto, Frankl empezó a observar la conducta de los prisioneros con ojos de científico y descubrió algo que transformó para siempre la psicología moderna:  
+          Los prisioneros que lograban sobreponerse y sobrevivir no eran necesariamente los más jóvenes ni los más fuertes físicamente. Eran aquellos que tenían un <strong>sentido</strong>, un propósito inquebrantable que le daba significado a su existencia: el amor hacia un hijo, un libro por escribir, la promesa de volver a abrazar a su familia, un proyecto de vida pendiente.
+        </p>
+
+        <div class="p-4 bg-slate-900/90 border-l-4 border-emerald-400 rounded-xl my-3 text-emerald-200 serif-quote italic">
+          «Al hombre se le puede arrebatar todo salvo una cosa: la última de las libertades humanas —la elección de la actitud personal que uno adopta frente a un conjunto de circunstancias dadas, para decidir su propio camino.»
+        </div>
+
+        <p>
+          Y citando a Nietzsche, nos grabó una brújula eterna:  
+          <em class="text-sky-300 font-semibold">“Quien tiene un porqué para vivir, puede soportar casi cualquier cómo.”</em>
+        </p>
+
+        <p>
+          Ahora bien... seamos muy claros y pongamos esto en perspectiva con serenidad:  
+          En el Real Estate no estamos en un campo de concentración ni en una situación de vida o muerte. Al contrario: estamos en una profesión privilegiada, productiva, emocionante y que a la gran mayoría de los que estamos aquí nos apasiona profundamente.
+        </p>
+        <p>
+          Pero la lección de Frankl es una ley universal de la mente humana: <strong>cuando el entorno se vuelve desafiante o incierto, lo único que sostiene a una persona de pie es la claridad de su propósito</strong>.
+        </p>
+
+        <p>
+          Y hablemos con el corazón en la mano sobre nuestra profesión:  
+          El Real Estate es una <strong>montaña rusa emocional y financiera</strong>. Hay semanas donde cierras dos ventas, firmas tres exclusivas y sientes que te vas a comer el mundo. Y hay semanas donde se cae una operación a horas de escriturar, un cliente no te atiende el teléfono y sientes que todo tu esfuerzo no sirvió de nada.
+        </p>
+        <p>
+          Y a esa montaña rusa se le suma una realidad biológica y comercial de este negocio: <strong>los resultados de lo que tú haces hoy no los ves hoy ni mañana; los ves por lo menos 3 meses después</strong>.  
+          El Real Estate es un negocio de mediano y largo plazo. Las llamadas de prospección, las valoraciones y la energía de servicio que entregas este martes no se cobran el viernes: maduran en 90 o 120 días.
+        </p>
+
+        <p>
+          Por eso, en esos días difíciles de la montaña rusa, cuando estás sembrando y todavía no ves los frutos, si tu único "porqué" en este negocio es cobrar una comisión rápida para pagar las cuentas del mes, te vas a quemar y vas a abandonar.  
+          Para sostenerte en los días de bajada necesitas <strong>conectar con tu verdadero propósito</strong>.
+        </p>
+
+        <div class="bg-slate-900/80 border border-slate-700/80 p-4 rounded-xl space-y-2 text-sm">
+          <strong class="text-amber-300 block text-base font-bold">¿Y cómo se encuentra ese sentido?</strong>
+          <p>El sentido se encuentra conectando con tus sensaciones más profundas y con lo que es realmente no negociable para ti:</p>
+          <ul class="list-disc pl-5 space-y-1 text-slate-200">
+            <li>Conectar con el bienestar, la educación y el futuro de tus hijos.</li>
+            <li>Conectar con la libertad de ser dueño de tu tiempo y de tu destino.</li>
+            <li>Conectar con el orgullo de construir un patrimonio ético y un legado profesional impecable.</li>
+            <li>Conectar con la vocación de servicio: saber que estás guiando a seres humanos reales en una de las decisiones más importantes de sus vidas.</li>
+          </ul>
+        </div>
+
+        <p>
+          Cuando tienes ese propósito anclado en el pecho, Frankl lo llamó <strong>Optimismo Trágico</strong>: la capacidad madura de aceptar la dificultad del momento sin perder la fe en el rumbo, transformando cualquier contratiempo en madurez y aprendizaje.»
+        </p>
+      </div>
+
+      <!-- Sacred Space & FISH -->
+      <div class="speech-bubble rounded-2xl p-6 text-slate-100 text-base sm:text-lg leading-relaxed space-y-4">
+        <div class="text-xs font-bold uppercase tracking-wider text-sky-400 mb-2">[44:00 - 48:00] El Espacio Sagrado del Mindfulness & la Filosofía FISH!</div>
+
+        <p>
+          «Y de esa misma sabiduría nace el concepto más potente del <strong>Mindfulness</strong> moderno:  
+          <em>“Entre el estímulo y la respuesta hay un espacio. En ese espacio reside nuestro poder de elegir nuestra respuesta. Y en nuestra respuesta reside nuestro crecimiento y nuestra libertad.”</em>
+        </p>
+        <p>
+          Piénsenlo en su día a día inmobiliario:<br/>
+          ¿Qué hace el asesor reactivo?<br/>
+          Un propietario le cancela la cita en la puerta ➔ El asesor reacciona con enojo, se queja en la oficina y arruina su tarde.<br/>
+          ¿Qué hace el asesor con mindfulness?<br/>
+          Habita el espacio. Siente la frustración en el cuerpo, respira profundo tres segundos, no reacciona desde el hígado, y elige responder desde la templanza, la empatía y el profesionalismo.
+        </p>
+        <p>
+          Y habitar ese espacio es exactamente la puerta de entrada a los cuatro pilares de la filosofía <strong>FISH!</strong>:
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 my-2 text-sm">
+          <div class="bg-amber-950/30 border border-amber-500/40 p-3.5 rounded-xl">
+            <span class="text-amber-400 font-bold text-base block mb-1">1. Elegir tu actitud:</span>
+            <p class="text-slate-300 text-xs sm:text-sm">Tú no controlas el tráfico ni el dólar; pero antes de salir de tu casa o levantar el teléfono, decides con qué energía vas a servir hoy.</p>
+          </div>
+          <div class="bg-sky-950/30 border border-sky-500/40 p-3.5 rounded-xl">
+            <span class="text-sky-400 font-bold text-base block mb-1">2. Estar presente (Be There):</span>
+            <p class="text-slate-300 text-xs sm:text-sm">100% de atención al cliente sin celular ni calculadora de comisiones en mente; escucha activa total.</p>
+          </div>
+          <div class="bg-emerald-950/30 border border-emerald-500/40 p-3.5 rounded-xl">
+            <span class="text-emerald-400 font-bold text-base block mb-1">3. Alegrarles el día (Make Their Day):</span>
+            <p class="text-slate-300 text-xs sm:text-sm">La compraventa es estresante; un detalle genuino o un alivio sincero genera clientes y lealtad para siempre.</p>
+          </div>
+          <div class="bg-purple-950/30 border border-purple-500/40 p-3.5 rounded-xl">
+            <span class="text-purple-400 font-bold text-base block mb-1">4. Jugar y disfrutar el camino (Play):</span>
+            <p class="text-slate-300 text-xs sm:text-sm">Hacemos un trabajo muy serio, pero con ligereza y entusiasmo contagioso. La queja ahuyenta; la alegría atrae.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- TRANSITION CARD 4 -->
+      <div class="transition-card rounded-2xl p-4 text-sky-200 text-sm flex items-center gap-3 shadow-md">
+        <span class="text-xl">🔄</span>
+        <div>
+          <strong class="text-white uppercase text-xs tracking-wider block font-bold">Transición Fluida hacia el Bloque 5:</strong>
+          «Ese propósito inspirador y esa actitud positiva son el combustible indispensable... pero si se quedan solo en el salón de un hotel, el lunes por la mañana se desvanecen. La psicología positiva aplicada al alto rendimiento exige ejecución táctica diaria. ¿Cómo bajamos toda esta mentalidad a las 8:30 de la mañana frente a tu agenda? Con dos herramientas quirúrgicas de Shawn Achor: El Círculo del Zorro y La Regla de los 20 Segundos...»
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- BLOQUE 5 -->
+    <!-- ========================================================================= -->
+    <section id="bloque-5" class="space-y-6 scroll-mt-28">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+        <div class="flex items-center gap-3">
+          <span class="w-8 h-8 rounded-xl bg-purple-600/20 text-purple-400 border border-purple-500/30 flex items-center justify-center font-bold text-sm">05</span>
+          <div>
+            <h2 class="text-xl font-bold text-white">BLOQUE 5: Del Propósito al Hábito: El Círculo del Zorro & La Regla de los 20 Segundos</h2>
+            <p class="text-xs text-slate-400">Dominar tu metro cuadrado diario, neurociencia de la fricción y cómo blindar la prospección</p>
+          </div>
+        </div>
+        <span class="text-xs font-mono font-bold bg-slate-800 text-slate-300 px-3 py-1 rounded-full">48:00 - 55:00 (7 min)</span>
+      </div>
+
+      <!-- Slide Card -->
+      <div class="slide-badge rounded-2xl p-4 flex items-start gap-3 text-indigo-200">
+        <span class="text-xl">📽️</span>
+        <div>
+          <div class="text-xs font-bold uppercase tracking-wider text-indigo-400">Diapositiva 14</div>
+          <div class="text-sm font-semibold text-white mt-0.5">Slide 14: De la Intención al Hábito: El Círculo del Zorro & La Regla de los 20 Segundos</div>
+        </div>
+      </div>
+
+      <!-- Zorro Circle -->
+      <div class="speech-bubble rounded-2xl p-6 text-slate-100 text-base sm:text-lg leading-relaxed space-y-4">
+        <div class="text-xs font-bold uppercase tracking-wider text-sky-400 mb-2">[48:00 - 51:30] El Círculo del Zorro: Cómo Vencer la Parálisis por Sobrecarga</div>
+
+        <p>
+          «En mis sesiones de coaching con agentes, veo constantemente a personas talentosas paralizadas por mirar la inmensidad del mercado: miran la inflación, la incertidumbre política o la meta anual de 40 ventas, y se abruman.
+        </p>
+        <p>
+          En <em>La ventaja de la felicidad</em>, Shawn Achor cuenta cómo el maestro de esgrima entrenaba a <strong>El Zorro</strong>.  
+          No lo ponía a pelear contra un batallón entero en campo abierto el primer día.  
+          Trazaba un círculo pequeño en la arena con su espada y le decía:  
+          <em>“Tu único trabajo hoy es dominar con absoluta maestría todo lo que ocurra dentro de este metro cuadrado. Cuando seas el dueño impecable de este espacio, ampliaremos el círculo.”</em>
+        </p>
+        <p>
+          En su día a día inmobiliario, <strong>¿cuál es su Círculo del Zorro?</strong>
+        </p>
+        <ul class="list-disc pl-6 space-y-1 text-slate-200 text-base">
+          <li>Su círculo <strong>NO</strong> son las decisiones del Banco Central.</li>
+          <li>Su círculo <strong>NO</strong> es la opinión del mercado.</li>
+          <li><strong>Su Círculo del Zorro es su metro cuadrado de hoy:</strong>
+            <ol class="list-decimal pl-6 mt-1 space-y-0.5 text-sky-200">
+              <li>¿Hiciste tus 5 llamadas de prospección de calidad esta mañana?</li>
+              <li>¿Cuidaste la calidad de tu diálogo interno al despertar?</li>
+              <li>¿Hiciste el seguimiento profesional a tus clientes calificados?</li>
+              <li>¿Fuiste impecable con tu agenda y con tu palabra?</li>
+            </ol>
+          </li>
+        </ul>
+        <p>
+          Si dominan su círculo de hoy, los números a fin de año se cuidan solos. El éxito en RE/MAX no es un golpe de suerte; es la acumulación silenciosa de pequeños hábitos ejecutados con presencia.
+        </p>
+      </div>
+
+      <!-- 20-Second Rule -->
+      <div class="speech-bubble rounded-2xl p-6 text-slate-100 text-base sm:text-lg leading-relaxed space-y-4">
+        <div class="text-xs font-bold uppercase tracking-wider text-sky-400 mb-2">[51:30 - 55:00] La Regla de los 20 Segundos: La Neurociencia de Arrancar sin Fricción</div>
+
+        <p>
+          «Pero aquí surge la pregunta clave:  
+          <em>Si todos en esta sala sabemos con exactitud qué llamadas y qué acciones componen nuestro Círculo del Zorro... ¿por qué a veces nos cuesta tanto dar el primer paso y postergamos?</em>
+        </p>
+        <p>
+          El cerebro humano está diseñado biológicamente para ahorrar energía. Si una tarea requiere esfuerzo para comenzar, el cerebro busca instintivamente la ruta de menor resistencia y nos sabotea con la procrastinación.
+        </p>
+        <p>
+          Shawn Achor descubrió <strong>La Regla de los 20 Segundos</strong>:  
+        </p>
+        
+        <div class="space-y-3 my-3">
+          <div class="bg-emerald-950/30 border border-emerald-500/40 p-4 rounded-xl text-sm">
+            <strong class="text-emerald-400 text-base block mb-1">1. Reducir 20 segundos de fricción para hábitos positivos:</strong>
+            Si reduces en tan solo 20 segundos la energía de activación para iniciar una tarea productiva, la probabilidad de ejecutarla se dispara de forma automática.<br/>
+            <em>Ejemplo para mañana a las 9:00 a.m.:</em> No llegues a las 9:00 a prender la computadora y ver a quién llamas. Deja la noche anterior una libreta sobre tu teclado con los 10 nombres y números de teléfono ya calificados. A las 9:00 a.m. tu fricción es cero segundos: te sientas, agarras el teléfono y marcas.
+          </div>
+
+          <div class="bg-red-950/30 border border-red-500/40 p-4 rounded-xl text-sm">
+            <strong class="text-red-400 text-base block mb-1">2. Aumentar 20 segundos de fricción para distracciones:</strong>
+            Si le añades 20 segundos de fricción a una mala costumbre, la eliminas casi por completo.<br/>
+            <em>Ejemplo:</em> Si mientras prospectas te distraes con las redes sociales, pon el celular en modo concentración dentro de un cajón o en otra habitación, y cierra WhatsApp Web. Esos 20 segundos que tardas en pararte, abrir el cajón y desbloquear el teléfono le dan tiempo a tu corteza prefrontal para frenar el impulso y mantener el foco.
+          </div>
+        </div>
+      </div>
+
+      <!-- TRANSITION CARD 5 -->
+      <div class="transition-card rounded-2xl p-4 text-sky-200 text-sm flex items-center gap-3 shadow-md">
+        <span class="text-xl">🔄</span>
+        <div>
+          <strong class="text-white uppercase text-xs tracking-wider block font-bold">Transición Fluida hacia el Bloque 6:</strong>
+          «Y cuando dominas tu círculo diario... cuando proteges tus hábitos con disciplina... tu negocio deja de ser una rueda de hámster de supervivencia y se convierte en lo que verdaderamente viniste a construir en este mundo: un vehículo de significado y trascendencia...»
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- BLOQUE 6 -->
+    <!-- ========================================================================= -->
+    <section id="bloque-6" class="space-y-6 scroll-mt-28">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+        <div class="flex items-center gap-3">
+          <span class="w-8 h-8 rounded-xl bg-rose-600/20 text-rose-400 border border-rose-500/30 flex items-center justify-center font-bold text-sm">06</span>
+          <div>
+            <h2 class="text-xl font-bold text-white">BLOQUE 6: Cierre Épico: La Construcción del Significado</h2>
+            <p class="text-xs text-slate-400">Cita sobre el sentido, custodios de sueños, tributo y ovación final</p>
+          </div>
+        </div>
+        <span class="text-xs font-mono font-bold bg-slate-800 text-slate-300 px-3 py-1 rounded-full">55:00 - 60:00 (5 min)</span>
+      </div>
+
+      <!-- Slide Card -->
+      <div class="slide-badge rounded-2xl p-4 flex items-start gap-3 text-indigo-200">
+        <span class="text-xl">📽️</span>
+        <div>
+          <div class="text-xs font-bold uppercase tracking-wider text-indigo-400">Diapositivas 15 & 16</div>
+          <div class="text-sm font-semibold text-white mt-0.5">Slide 15: La Construcción del Significado (Cita de Cierre) → Slide 16: RE/MAX Costa Rica 2026 & ¡Muchas Gracias!</div>
+        </div>
+      </div>
+
+      <!-- Stage Note -->
+      <div class="stage-note rounded-2xl p-4 text-amber-200 text-sm flex items-start gap-3">
+        <span class="text-lg">🎭</span>
+        <div>
+          <strong class="text-amber-300 font-semibold">Acotación Escénica:</strong>
+          Música instrumental emotiva y sutil de fondo. Maia da un paso al frente con máxima presencia y calidez. Tono lleno de verdad, serenidad y convicción absoluta.
+        </div>
+      </div>
+
+      <!-- Speech Content -->
+      <div class="speech-bubble rounded-2xl p-6 text-slate-100 text-base sm:text-lg leading-relaxed space-y-4">
+        <div class="text-xs font-bold uppercase tracking-wider text-sky-400 mb-2">[55:00 - 58:30] La Construcción del Significado en la Vida y en el Trabajo</div>
+
+        <p>
+          «Quiero cerrar esta hora compartiendo con ustedes una cita que guardo en mis notas personales y que guía cada una de mis sesiones de coaching:
+        </p>
+        
+        <div class="p-5 bg-slate-900/90 border-l-4 border-amber-400 rounded-xl my-4 text-slate-100 text-base sm:text-lg serif-quote italic space-y-2 leading-relaxed">
+          <p>“El significado no es algo que se encuentra por casualidad en el camino, como la respuesta a un acertijo o el premio en la búsqueda de un tesoro.</p>
+          <p>El significado es algo con lo que vas construyendo tu propia vida.</p>
+          <p>Lo construyes con tu pasado, con tus afectos y tus lealtades, con tu talento y tu comprensión, con las cosas en las que crees firmemente, con las personas que amas y con los valores por los cuales estás dispuesto a sacrificar algo.</p>
+          <p>Esos son los ingredientes. Tú eres el único que puede juntarlos en ese modelo irrepetible que será tu vida.</p>
+          <p>Permite que tu vida tenga dignidad y sentido. Porque si los tiene, importará mucho menos de qué lado se incline temporalmente la balanza del éxito o del fracaso.”</p>
+        </div>
+
+        <p>
+          Miren a sus compañeros.  
+          Miren a sus colegas de Guanacaste, de Heredia, del Caribe Sur, del Valle Central, de Atenas, de Manuel Antonio, de Nosara.  
+          Ustedes no son simples intermediarios de metros cuadrados o de contratos notariales.  
+          Ustedes son los custodios de los sueños de familias enteras. Son quienes acompañan a una persona a empezar de nuevo, a un emprendedor a proteger su patrimonio, a una familia a encontrar el hogar donde van a crecer sus hijos.
+        </p>
+      </div>
+
+      <!-- Final Call to Greatness -->
+      <div class="speech-bubble rounded-2xl p-6 text-slate-100 text-base sm:text-lg leading-relaxed space-y-4 border-l-4 border-red-500">
+        <div class="text-xs font-bold uppercase tracking-wider text-red-400 mb-2">[58:30 - 60:00] El Llamado Final a la Grandeza</div>
+
+        <p>
+          «Cuando mi abuela partió y tomé la decisión de dedicar mi vida a la psicología positiva, comprendí que la vida es un regalo demasiado sagrado como para desperdiciarla viviendo como sonámbulos, culpando a las circunstancias de lo que no nos gusta.
+        </p>
+        <p>
+          No podemos controlar las olas del mercado.  
+          No podemos controlar lo que hacen los demás.  
+          Pero cada mañana, cuando se pongan de pie en esta hermosa tierra de Costa Rica, ustedes tienen el poder sagrado e innegociable de <strong>elegir su actitud</strong>.  
+          Tienen el poder de dominar su Círculo del Zorro, de cuidar su diálogo interno, de habitar el espacio sagrado de Viktor Frankl y de transformar cada adversidad en su mayor impulso de crecimiento.
+        </p>
+        <p class="text-lg sm:text-xl font-bold text-white">
+          Salgan de esta convención no solo decididos a batir sus récords de ventas...  
+          Salgan decididos a ser la versión más extraordinaria, consciente, humana y positiva de ustedes mismos.
+        </p>
+        <p class="text-xl sm:text-2xl font-black text-sky-400 text-center py-2">
+          ¡Muchísimas gracias, RE/MAX Costa Rica!
+        </p>
+      </div>
+
+      <div class="stage-note rounded-2xl p-4 text-amber-200 text-sm flex items-start gap-3">
+        <span class="text-lg">👏</span>
+        <div>
+          <strong class="text-amber-300 font-semibold">Cierre y Ovación:</strong>
+          Maia coloca su mano derecha sobre el corazón, hace una inclinación sutil de agradecimiento y luego abre ambos brazos hacia el auditorio con una gran sonrisa. Permite que los aplausos resuenen antes de despedirse.
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- RESUMEN / CHEAT SHEET -->
+    <!-- ========================================================================= -->
+    <section id="resumen" class="space-y-6 scroll-mt-28">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+        <div class="flex items-center gap-3">
+          <span class="w-8 h-8 rounded-xl bg-sky-600/20 text-sky-400 border border-sky-500/30 flex items-center justify-center font-bold text-sm">📊</span>
+          <div>
+            <h2 class="text-xl font-bold text-white">TABLA MAESTRA: De la Psicología a la Práctica Inmobiliaria</h2>
+            <p class="text-xs text-slate-400">Guía rápida de conceptos, autores y aplicaciones para repasar antes de salir al escenario</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <table class="w-full text-left text-xs sm:text-sm text-slate-300">
+          <thead class="bg-slate-800/80 text-white uppercase text-xs tracking-wider border-b border-slate-700">
+            <tr>
+              <th class="p-3.5">Concepto Psicológico</th>
+              <th class="p-3.5">Autor / Fuente</th>
+              <th class="p-3.5">Impacto en Real Estate</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-800">
+            <tr class="hover:bg-slate-800/40 transition">
+              <td class="p-3.5 font-bold text-sky-400">La Ventaja de la Felicidad</td>
+              <td class="p-3.5 text-slate-400">Shawn Achor</td>
+              <td class="p-3.5">La positividad eleva la dopamina, expande la mente y dispara la creatividad negociadora un 300%.</td>
+            </tr>
+            <tr class="hover:bg-slate-800/40 transition">
+              <td class="p-3.5 font-bold text-sky-400">Estudio MetLife en Trinchera</td>
+              <td class="p-3.5 text-slate-400">Martin Seligman</td>
+              <td class="p-3.5">Carlos vs Andrea: interpretar el "NO" como aprendizaje permite hacer 25 llamadas y vender +88%.</td>
+            </tr>
+            <tr class="hover:bg-slate-800/40 transition">
+              <td class="p-3.5 font-bold text-amber-400">Escenarios Contrafactuales (El Caso del Banco)</td>
+              <td class="p-3.5 text-slate-400">Shawn Achor / Epicteto</td>
+              <td class="p-3.5">El hecho exterior es neutro; el escenario hipotético que inventa la mente define si te sientes víctima o líder ante una caída.</td>
+            </tr>
+            <tr class="hover:bg-slate-800/40 transition">
+              <td class="p-3.5 font-bold text-amber-300">¿Qué harías sin miedo?</td>
+              <td class="p-3.5 text-slate-400">Spencer Johnson</td>
+              <td class="p-3.5">Eliminar la 'procrastinación elegante' (Canva), llamar al cliente de lujo y defender honorarios.</td>
+            </tr>
+            <tr class="hover:bg-slate-800/40 transition">
+              <td class="p-3.5 font-bold text-emerald-400">La Última Libertad & Sentido</td>
+              <td class="p-3.5 text-slate-400">Viktor Frankl</td>
+              <td class="p-3.5">Un 'porqué' sólido resiste cualquier 'cómo' del mercado; practicar el Optimismo Trágico.</td>
+            </tr>
+            <tr class="hover:bg-slate-800/40 transition">
+              <td class="p-3.5 font-bold text-emerald-400">Espacio de Elección (Mindfulness)</td>
+              <td class="p-3.5 text-slate-400">Viktor Frankl</td>
+              <td class="p-3.5">Pausa de 3 segundos ante una objeción para no reaccionar con el ego y negociar con serenidad.</td>
+            </tr>
+            <tr class="hover:bg-slate-800/40 transition">
+              <td class="p-3.5 font-bold text-amber-400">Filosofía FISH!</td>
+              <td class="p-3.5 text-slate-400">Lundin, Christensen, Paul</td>
+              <td class="p-3.5">Elegir actitud, estar 100% presente con el cliente, alegrarle el día a los demás y disfrutar el proceso.</td>
+            </tr>
+            <tr class="hover:bg-slate-800/40 transition">
+              <td class="p-3.5 font-bold text-purple-400">El Círculo del Zorro</td>
+              <td class="p-3.5 text-slate-400">Shawn Achor</td>
+              <td class="p-3.5">Dominar el metro cuadrado diario (5 llamadas, seguimiento, KPIs) y no angustiarse por el macroentorno.</td>
+            </tr>
+            <tr class="hover:bg-slate-800/40 transition">
+              <td class="p-3.5 font-bold text-emerald-400">Regla de los 20 Segundos</td>
+              <td class="p-3.5 text-slate-400">Shawn Achor</td>
+              <td class="p-3.5">Bajar la fricción de prospectar (lista preparada la noche anterior) y aumentar la de las distracciones.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- JAVASCRIPT FOR TIMER & FONT SIZE -->
+  <script>
+    let timerSeconds = 0;
+    let timerInterval = null;
+    let isRunning = false;
+
+        function togglePaperMode() {
+      const isPaper = document.body.classList.toggle('paper-mode');
+      const btn = document.getElementById('paperModeBtn');
+      if (isPaper) {
+        btn.innerHTML = '<span>🌙</span> <span class="hidden md:inline">Modo Escenario</span>';
+        btn.classList.replace('bg-slate-800', 'bg-amber-600');
+        btn.classList.replace('hover:bg-slate-700', 'hover:bg-amber-500');
+        btn.classList.add('text-white');
+      } else {
+        btn.innerHTML = '<span>📄</span> <span class="hidden md:inline">Vista Impresión</span>';
+        btn.classList.replace('bg-amber-600', 'bg-slate-800');
+        btn.classList.replace('hover:bg-amber-500', 'hover:bg-slate-700');
+        btn.classList.remove('text-white');
+      }
+    }
+
+    function toggleTimer() {
+      const btn = document.getElementById('timerToggleBtn');
+      if (isRunning) {
+        clearInterval(timerInterval);
+        btn.innerText = 'Play';
+        btn.classList.replace('bg-amber-600', 'bg-sky-600');
+        btn.classList.replace('hover:bg-amber-500', 'hover:bg-sky-500');
+        isRunning = false;
+      } else {
+        timerInterval = setInterval(() => {
+          timerSeconds++;
+          updateTimerDisplay();
+        }, 1000);
+        btn.innerText = 'Pausa';
+        btn.classList.replace('bg-sky-600', 'bg-amber-600');
+        btn.classList.replace('hover:bg-sky-500', 'hover:bg-amber-500');
+        isRunning = true;
+      }
+    }
+
+    function resetTimer() {
+      clearInterval(timerInterval);
+      isRunning = false;
+      timerSeconds = 0;
+      updateTimerDisplay();
+      const btn = document.getElementById('timerToggleBtn');
+      btn.innerText = 'Play';
+      btn.classList.replace('bg-amber-600', 'bg-sky-600');
+      btn.classList.replace('hover:bg-amber-500', 'hover:bg-sky-500');
+    }
+
+    function updateTimerDisplay() {
+      const mins = Math.floor(timerSeconds / 60);
+      const secs = timerSeconds % 60;
+      document.getElementById('timerDisplay').innerText = 
+        `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+    }
+
+    let currentScale = 1;
+    function changeFontSize(direction) {
+      currentScale += direction * 0.1;
+      if (currentScale < 0.8) currentScale = 0.8;
+      if (currentScale > 1.4) currentScale = 1.4;
+      document.getElementById('scriptContent').style.fontSize = `${currentScale}rem`;
+    }
+  </script>
+</body>
+</html>

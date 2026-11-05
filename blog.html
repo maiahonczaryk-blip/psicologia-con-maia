@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog · Xilema by Maia</title>
+<meta name="description" content="Notas semanales sobre reclutamiento, procesos, propósito, liderazgo y cómo navegar el mundo del trabajo en la modernidad líquida.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="logos/final/xilema-icono.svg">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="blog.css">
+<link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a href="index.html" class="logo" aria-label="Xilema by Maia"><img class="logo-img" src="logos/final/xilema-logo-azul.svg" alt="Xilema by Maia"></a>
+      <ul>
+        <li><a href="index.html#quien">Perfil</a></li>
+        <li><a href="index.html#ayuda">Enfoque</a></li>
+        <li><a href="index.html#servicios">Servicios</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="index.html#agenda">Contacto</a></li>
+      </ul>
+      <a href="index.html#agenda" class="btn ghost">Primera sesión</a>
+    </nav>
+  </div>
+</header>
+
+<section class="blog-hero">
+  <div class="wrap">
+    <span class="eyebrow">Blog</span>
+    <h1>Notas para <em>surfear la ola</em></h1>
+    <p class="lead">Una reflexión por semana para ti, que diriges un negocio en un mundo que no se queda quieto.</p>
+  </div>
+</section>
+
+<section class="blog-list-sec">
+  <div class="wrap">
+    <div class="filters" id="filters"></div>
+    <div class="post-grid" id="grid"></div>
+  </div>
+</section>
+
+<footer>© 2026 Xilema by Maia · Maia Honczaryk</footer>
+
+<script src="blog/posts.js"></script>
+<script>
+  const meses=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+  const fmt=f=>{const [y,m,d]=f.split('-');return `${+d} de ${meses[+m-1]} de ${y}`};
+  const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const hoy=new Date().toLocaleDateString('sv-SE'); // AAAA-MM-DD local
+  const posts=window.POSTS.filter(p=>p.fecha<=hoy).sort((a,b)=>b.fecha.localeCompare(a.fecha));
+  const cats=[...new Set(posts.map(p=>p.categoria))];
+  const grid=document.getElementById('grid'), filters=document.getElementById('filters');
+  let activa=new URLSearchParams(location.search).get('cat')||'';
+
+  function render(){
+    filters.innerHTML=['Todas',...cats].map(c=>{
+      const on=(c==='Todas'&&!activa)||c===activa;
+      return `<button class="${on?'on':''}" data-c="${c==='Todas'?'':esc(c)}">${esc(c)}</button>`}).join('');
+    const lista=posts.filter(p=>!activa||p.categoria===activa);
+    grid.innerHTML=lista.length?lista.map(p=>`
+      <a class="card" href="post.html?p=${encodeURIComponent(p.slug)}">
+        <span class="meta">${esc(p.categoria)} · ${fmt(p.fecha)}</span>
+        <h3>${esc(p.titulo)}</h3>
+        <p>${esc(p.resumen)}</p>
+        <span class="more">Leer nota →</span>
+      </a>`).join(''):'<p class="empty">Todavía no hay notas en esta categoría.</p>';
+  }
+  filters.addEventListener('click',e=>{if(e.target.dataset.c!==undefined){activa=e.target.dataset.c;render()}});
+  render();
+</script>
+<script src="mobile.js"></script>
+</body>
+</html>
