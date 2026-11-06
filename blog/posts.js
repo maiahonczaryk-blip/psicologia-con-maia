@@ -143,29 +143,36 @@ window.POSTS = [
     slug: "los-hechos-son-neutros",
     fecha: "2026-11-05",
     categoria: "Modernidad líquida",
-    titulo: "El hecho es neutro; el escenario lo inventas tú",
-    resumen: "Se cae una operación y el hecho es el mismo para todos. Lo que cambia es la historia que te cuentas. Retransformación y círculo del Zorro para volver a moverte.",
+    titulo: "Los hechos son neutros. Lo que te pasa lo decide la historia que te cuentas",
+    resumen: "En los negocios, lo que ocurre pesa menos que lo que esperabas y que lo que interpretas. Una reflexión sobre percepciones, expectativas y qué hacer con ellas.",
     contenido: `
-      <p>Si leíste la nota anterior, ya sabes que sentirte confundido no es fallar. Ahora toca lo importante: qué haces con eso.</p>
-      <h2>El hecho es neutro; el escenario lo inventas tú</h2>
-      <p>Epicteto lo dijo hace dos mil años: no nos perturban las cosas que pasan, sino los juicios que hacemos sobre ellas. La neurociencia lo explica con los <em>escenarios contrafactuales</em>: cuando algo ocurre, tu cerebro inventa una realidad alternativa para evaluarlo. Si imagina una mejor, te sientes víctima («¿por qué a mí?»). Si imagina una peor, sientes alivio y fuerza («podría haber sido mucho peor»).</p>
-      <p>Se te cae una operación, se va un cliente clave, el mercado se frena. El hecho es el mismo para todos. Lo que separa a quien se paraliza cuatro días de quien a los quince minutos replantea el siguiente paso es la historia que se cuenta en los primeros segundos.</p>
-      <h2>Y si esto no es una crisis, sino una retransformación</h2>
-      <p>Creo que estamos entrando en una época en la que <strong>todo se retransforma</strong>: las empresas, los trabajos, la forma de contratar, de liderar, de definir una buena carrera. Eso incomoda. Pero cuando las certezas de fuera se disuelven, lo único que te queda para orientarte es lo de dentro: tu propósito, tus valores, tu «para qué».</p>
-      <p>Viktor Frankl observó que los prisioneros que resistían no eran los más jóvenes ni los más fuertes, sino los que tenían un sentido que los sostenía. «Quien tiene un porqué para vivir puede soportar casi cualquier cómo». Ni de lejos es una situación comparable con la tuya, pero la ley es la misma: cuando el entorno se vuelve incierto, lo que te mantiene en pie es la claridad de tu propósito.</p>
-      <h2>Qué puedes hacer hoy</h2>
-      <p>No puedes controlar las olas del mercado ni lo que hacen los demás. Sí puedes decidir cada mañana tu actitud y dónde pones el foco. Tres ideas:</p>
+      <p>En la nota anterior hablé de la confusión: tanta información que, en vez de ayudarte a decidir, te deja quieto. Hoy quiero ir a lo que pasa justo después, en esos primeros segundos en los que algo sucede y tu cabeza empieza a trabajar.</p>
+      <h2>Lo que pasa y lo que te cuentas</h2>
+      <p>Se cae una operación. Se va un cliente. Alguien de tu equipo no cumple. Esos son los hechos, y los hechos, por sí solos, no dicen nada. Epicteto lo escribió hace dos mil años: no nos perturban las cosas, sino los juicios que hacemos sobre ellas.</p>
+      <p>La neurociencia lo explica con los <em>escenarios contrafactuales</em>: ante cualquier cosa que ocurre, tu cerebro fabrica una versión alternativa para poder evaluarla. Si imagina una mejor, aparece el «¿por qué a mí?». Si imagina una peor, aparece el «podría haber sido peor». El hecho es idéntico. La historia, no.</p>
+      <h2>Tu cerebro no ve la realidad: ve lo que esperaba</h2>
+      <p>Vivimos rodeados de información, pero lo que llega a ti ya viene filtrado por lo que esperas. Dos personas miran el mismo resultado trimestral y una dice «hemos fallado» y la otra «hemos aguantado». No difieren en los datos. Difieren en la expectativa con la que los miran.</p>
+      <p>En los negocios esto se ve todo el tiempo. Esperabas que ese cliente renovara, que ese candidato aceptara, que tu equipo se moviera solo, que este año fuera el de despegar. Cuando la realidad no coincide, lo que duele no es solo el hecho: es la distancia entre lo que esperabas y lo que ocurrió. Y esa distancia la construiste tú, muchas veces sin darte cuenta.</p>
+      <blockquote>Gran parte de lo que llamamos «un mal día» es una expectativa que nunca revisamos.</blockquote>
+      <h2>Y también cuenta lo que haces con eso</h2>
+      <p>La percepción no se queda en la cabeza: se convierte en conducta. Si lees un hecho como amenaza, te cierras, postergas, controlas de más o te desesperas. Si lo lees como información, te preguntas qué te enseña. Con la misma situación puedes acabar en dos lugares muy distintos, y la diferencia suele estar en lo que hiciste durante la primera hora.</p>
+      <p>Por eso me parece más útil preguntarse menos «¿por qué me pasa esto?» y más «¿qué estoy dando por hecho?» y «¿qué voy a hacer con esto?».</p>
+      <h2>Quizá no sea una crisis, sino una retransformación</h2>
+      <p>Tengo la sensación de que estamos en una época en la que <strong>todo se retransforma</strong>: las empresas, los trabajos, la forma de contratar y de liderar. Eso incomoda, porque las expectativas con las que construimos nuestros planes ya no encajan del todo con el entorno. Pero cuando las certezas de fuera se mueven, lo que queda para orientarte es lo de dentro: tu propósito, tus valores, tu «para qué».</p>
+      <p>Viktor Frankl observó que quienes resistían los campos de concentración no eran los más jóvenes ni los más fuertes, sino los que tenían un sentido que los sostenía: «quien tiene un porqué para vivir puede soportar casi cualquier cómo». Ni de lejos es comparable con lo que vives en tu empresa, pero la idea de fondo se parece: la claridad sobre para qué haces lo que haces te ordena cuando todo lo demás se mueve.</p>
+      <h2>Para llevarte a casa</h2>
+      <p>No es una lista de tareas. Son preguntas para esta semana, por si quieres hacerlas con calma:</p>
       <ul>
-        <li><strong>Dibuja tu círculo del Zorro.</strong> Shawn Achor cuenta que un maestro de esgrima entrenaba a un joven trazando un pequeño círculo en la arena: «tu único trabajo hoy es dominar todo lo que ocurra dentro de este metro cuadrado. Cuando lo domines, ampliaremos el círculo». ¿Qué hay dentro de tu círculo de hoy? Tres decisiones, una conversación pendiente, un hábito. Lo que no está dentro, hoy, no es tu trabajo.</li>
-        <li><strong>Aplica la regla de los 20 segundos.</strong> Si quieres que algo ocurra, quita veinte segundos de fricción: deja preparado de la noche anterior lo que necesitas para arrancar. Si quieres que algo no ocurra, añádele veinte: el móvil en otro cuarto, la pestaña cerrada.</li>
-        <li><strong>Desenmascara tu procrastinación elegante.</strong> Ordenar carpetas, retocar presentaciones o leer «una cosa más» también es una forma refinada de evitar lo que de verdad te da miedo. Pregúntate, sin juzgarte, qué estás evitando.</li>
+        <li><strong>¿Qué esperabas?</strong> Escribe la expectativa que había detrás de lo último que te molestó. ¿Era realista? ¿Alguien más la conocía?</li>
+        <li><strong>¿Qué historia te contaste en los primeros segundos?</strong> Y la contraria: ¿cuál sería otra lectura igual de posible?</li>
+        <li><strong>¿Qué parte depende de ti?</strong> A veces es pequeña: una conversación, una decisión, un límite. Empezar por ahí suele bastar.</li>
+        <li><strong>¿Cuál es tu «para qué» ahora?</strong> Si hoy tuvieras que explicarlo en una frase, ¿cuál sería?</li>
       </ul>
-      <h2>Lo que vas a encontrar aquí</h2>
-      <p>Cada semana te escribo una nota como esta, pensada para quien lidera: reclutamiento (y por qué reclutar emprendedores no se parece a reclutar empleados), procesos, propósito y motivación, zona de confort y crecimiento, el rol real del líder y cómo moverte en un empleo y unos negocios que no se quedan quietos.</p>
-      <p>No te traigo otra lista de pautas; ya tienes demasiadas. Vengo a pensar contigo.</p>
+      <p>Si al hacerlo te das cuenta de que no tienes con quién conversar esto, es normal. Quien dirige suele tener a muchos alrededor y a casi nadie con quien pensar en voz alta.</p>
       <div class="callout">
         <h3>¿En serio quieres hacer esto solo?</h3>
-        <p>Me dedico a acompañar a dueños y líderes como tú, uno a uno, a recuperar claridad, tomar las decisiones que llevan semanas pendientes y sostener a su equipo sin quemarse. Empezamos con una sesión de coaching: me cuentas dónde estás, vemos qué te frena y sales con un siguiente paso concreto. Si en el camino necesitas ordenar tu equipo, contratar mejor o rediseñar cómo funciona tu empresa, lo trabajamos juntos.</p>
+        <p>En una sesión de coaching 1 a 1 partimos de tu situación real: qué esperabas, qué está pasando, qué historia te estás contando y qué decisión llevas semanas aplazando. Sales con claridad y con un siguiente paso concreto, no con otra lista de pautas.</p>
+        <p>Si además necesitas ordenar tu equipo, hacer una mejor selección o rediseñar cómo funciona tu empresa, lo trabajamos juntos.</p>
         <p><a class="btn solid" href="index.html#agenda">Reserva tu primera sesión</a></p>
       </div>
     `
