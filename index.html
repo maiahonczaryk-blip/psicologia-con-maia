@@ -234,9 +234,9 @@
       <h2>Hablemos de <em>lo que te quita el sueño</em></h2>
       <div class="line"></div>
       <p>Reserva una primera sesión de coaching: me cuentas dónde estás, vemos qué te frena y te vas con un siguiente paso concreto para esta semana.</p>
-      <!-- Sustituye # por tu enlace de Calendly, Google Calendar, etc. -->
-      <a href="https://wa.me/34603683971?text=Hola%20Maia%2C%20quiero%20reservar%20una%20primera%20sesi%C3%B3n%20de%20coaching" class="btn solid">Reserva tu primera sesión</a>
+      <a href="https://cal.com/xilemabymaia/30min" target="_blank" rel="noopener" class="btn solid">Reserva tu primera sesión</a>
     </div>
+    <div id="cal-inline" class="cal-embed"></div>
     <div class="contact">
       <div><small>Email</small><a href="mailto:maia@xilema.net">maia@xilema.net</a></div>
       <div><small>WhatsApp</small><a href="https://wa.me/34603683971">+34 603 683 971</a></div>
@@ -247,6 +247,16 @@
 
 <footer>© 2026 Xilema by Maia · Maia B. Honczaryk</footer>
 
+<script>
+  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+  Cal("init", "30min", {origin:"https://cal.com"});
+  Cal.ns["30min"]("inline", {
+    elementOrSelector:"#cal-inline",
+    config: {"layout":"month_view","theme":"light"},
+    calLink: "xilemabymaia/30min",
+  });
+  Cal.ns["30min"]("ui", {"theme":"light","cssVarsPerTheme":{"light":{"cal-brand":"#09318D"}},"hideEventTypeDetails":false,"layout":"month_view"});
+</script>
 <script src="mobile.js"></script>
 </body>
 </html>
