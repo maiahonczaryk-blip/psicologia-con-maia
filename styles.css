@@ -236,5 +236,6 @@ footer{background:var(--pink);padding:32px 0;text-align:center;font-size:13px;co
 .leaf.l-hero2{display:none}
 
 /* calendario integrado de Cal.com */
-.cal-embed{width:100%;min-height:540px;margin-top:44px;overflow:auto}
+.book .tz-note{font-size:13.5px;color:var(--muted);margin:20px auto 0;max-width:520px}
+.cal-embed{width:100%;min-height:540px;margin-top:32px;overflow:auto}
 
